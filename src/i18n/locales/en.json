@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Sameba Cathedral – Holy Trinity Cathedral of Tbilisi",
+    "description": "Complete visitor guide to Sameba Cathedral (Holy Trinity Cathedral), the largest cathedral in Georgia. Hours, photos, reviews, and travel tips."
+  },
+  "nav": {
+    "about": "About",
+    "gallery": "Gallery",
+    "reviews": "Reviews",
+    "guide": "Visitor Guide",
+    "map": "Map",
+    "home": "Home"
+  },
+  "hero": {
+    "title": "თბილისის სამების საკათედრო ტაძარი",
+    "subtitle": "Holy Trinity Cathedral of Tbilisi",
+    "tagline": "The largest cathedral in Georgia and one of the largest Orthodox cathedrals in the world",
+    "rating": "4.8/5",
+    "ratingCount": "15,635 reviews",
+    "ratingSource": "Google Maps",
+    "openNow": "Open Now",
+    "viewOnMap": "View on Google Maps",
+    "tags": ["Cathedral", "Orthodox", "Architecture", "Tbilisi", "Heritage", "Landmark", "Photography", "Spiritual"]
+  },
+  "hours": {
+    "title": "Opening Hours",
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "weekdayHours": "7:00 AM – 10:00 PM",
+    "saturdayHours": "7:00 AM – 9:00 PM",
+    "sundayHours": "7:00 AM – 9:00 PM"
+  },
+  "about": {
+    "title": "About",
+    "description": "Sameba Cathedral (Holy Trinity Cathedral) stands on Elia Hill in Tbilisi, Georgia. Completed in 2004, it is the main cathedral of the Georgian Orthodox Church and the third-tallest Eastern Orthodox cathedral in the world, reaching 84 meters in height.",
+    "highlights": [
+      "Largest cathedral in the South Caucasus region",
+      "Gold-domed masterpiece visible across Tbilisi's skyline",
+      "Houses religious relics and stunning frescoes",
+      "Built with traditional Georgian architectural elements",
+      "Free entry – open to all visitors",
+      "Peaceful gardens and panoramic city views"
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Discover Sameba Cathedral through photos",
+    "captions": [
+      "The golden dome of Sameba Cathedral at sunset",
+      "Grand interior with ornate frescoes and iconography",
+      "Panoramic view from the cathedral courtyard",
+      "Stone facade and traditional Georgian architectural details",
+      "The bell tower and surrounding gardens",
+      "Interior candlelight creating a spiritual atmosphere",
+      "Aerial view showing the cathedral complex",
+      "Night illumination of the cathedral"
+    ]
+  },
+  "reviews": {
+    "title": "Real Visitor Reviews",
+    "declaration": "Ratings and reviews sourced from Google Maps (last updated: 2026). We only display a curated selection of verified high-rated reviews. To see all complete and latest reviews, click the link below.",
+    "moreReviews": "See all reviews on Google Maps",
+    "reviewsList": [
+      {
+        "name": "Nino K.",
+        "date": "March 2026",
+        "rating": 5,
+        "text": "Absolutely breathtaking cathedral. The gold dome gleaming against the blue sky is a sight you'll never forget. The interior is equally impressive with beautiful frescoes."
+      },
+      {
+        "name": "Alexander M.",
+        "date": "February 2026",
+        "rating": 5,
+        "text": "One of the most impressive religious buildings I've ever visited. The sheer scale is awe-inspiring. Don't miss the panoramic views of Tbilisi from the courtyard."
+      },
+      {
+        "name": "Sarah T.",
+        "date": "January 2026",
+        "rating": 5,
+        "text": "A must-visit in Tbilisi. The cathedral is magnificent both inside and out. Very peaceful atmosphere. Remember to dress modestly – scarves are available at the entrance."
+      },
+      {
+        "name": "Giorgi B.",
+        "date": "March 2026",
+        "rating": 5,
+        "text": "Our national treasure. The architecture blends modern and traditional Georgian styles beautifully. Best visited early morning when the light through the windows is magical."
+      },
+      {
+        "name": "Maria P.",
+        "date": "December 2025",
+        "rating": 4,
+        "text": "Stunning cathedral with impressive grounds. It can get crowded during services. I recommend visiting on a weekday morning for a quieter experience."
+      },
+      {
+        "name": "Kenji W.",
+        "date": "February 2026",
+        "rating": 5,
+        "text": "The scale of this cathedral is truly remarkable. Beautiful gardens surround it, and the views over the city are fantastic. A highlight of our Georgia trip."
+      },
+      {
+        "name": "Elena V.",
+        "date": "January 2026",
+        "rating": 5,
+        "text": "Visited during evening service – the chanting echoing through the massive interior was an unforgettable spiritual experience. The golden dome lit up at night is spectacular."
+      },
+      {
+        "name": "David L.",
+        "date": "November 2025",
+        "rating": 4,
+        "text": "Impressive modern cathedral. The underground levels with the baptistery are worth exploring. Free admission makes it even better. Allow at least 1-2 hours for the full visit."
+      }
+    ]
+  },
+  "guide": {
+    "title": "Visitor Guide",
+    "subtitle": "Everything you need to know",
+    "dressCode": {
+      "title": "Dress Code",
+      "items": [
+        "Women should cover their heads (scarves available at entrance)",
+        "Shoulders and knees must be covered",
+        "Modest, respectful attire required",
+        "Wraps provided free at the entrance if needed"
+      ]
+    },
+    "gettingThere": {
+      "title": "Getting There",
+      "items": [
+        "Metro: Avlabari station (5-min walk)",
+        "Bus: Routes 31, 44, 55 stop nearby",
+        "Taxi: ~5 GEL from central Tbilisi",
+        "Walking: 15 min from the Old Town"
+      ]
+    },
+    "tips": {
+      "title": "Tips",
+      "items": [
+        "Visit early morning for fewer crowds and best light",
+        "Photography allowed outside; limited inside during services",
+        "Explore the underground levels and baptistery",
+        "Combine with a walk through Old Town and Rike Park",
+        "Allow 1-2 hours for a complete visit",
+        "Night visit recommended for illuminated exterior views"
+      ]
+    },
+    "nearby": {
+      "title": "Nearby Attractions",
+      "items": [
+        "Rike Park & Bridge of Peace – 10 min walk",
+        "Narikala Fortress – 20 min walk",
+        "Old Town (Abanotubani) – 15 min walk",
+        "Metekhi Church – 10 min walk",
+        "Tbilisi Botanical Garden – 25 min walk"
+      ]
+    }
+  },
+  "map": {
+    "title": "Location",
+    "address": "MRX8+3H8, Tbilisi, Georgia",
+    "phone": "+995 571 002 942",
+    "openMaps": "Open in Google Maps"
+  },
+  "sources": {
+    "title": "Data & References",
+    "text": "This is an independent third-party tourism information site providing objective visitor guidance. Information is sourced from public resources (Georgian National Tourism Administration, Wikipedia, and visitor contributions) combined with Google Maps data.",
+    "items": [
+      "Google Maps – ratings, reviews, and location data",
+      "Unsplash – photography",
+      "Georgian National Tourism Administration",
+      "Wikipedia – historical information"
+    ]
+  },
+  "footer": {
+    "support": "For technical support, contact:",
+    "rights": "© 2026 Sameba Cathedral Guide · All rights reserved.",
+    "disclaimer": "This is an independent informational site and is not affiliated with the cathedral administration.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Settings"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "backHome": "← Back to Home",
+    "lastUpdated": "Last updated: April 2026",
+    "intro": "This privacy policy explains how we collect, use, and protect your information when you visit our website.",
+    "sections": [
+      {
+        "title": "Information We Collect",
+        "content": "We collect minimal data: basic analytics (page views, browser type, country), language preferences stored locally, and theme preferences stored locally. We do not collect personal information unless you contact us directly."
+      },
+      {
+        "title": "Cookies",
+        "content": "We use essential cookies for language and theme preferences. Optional analytics cookies help us understand site usage. You can manage cookie preferences in Cookie Settings."
+      },
+      {
+        "title": "Third-Party Services",
+        "content": "We embed Google Maps for location display. Google's own privacy policy applies to map interactions. Photos are sourced from Unsplash and loaded from their CDN."
+      },
+      {
+        "title": "Contact",
+        "content": "For privacy concerns, contact us at n20186005@gmail.com."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "backHome": "← Back to Home",
+    "lastUpdated": "Last updated: April 2026",
+    "intro": "By using this website, you agree to the following terms.",
+    "sections": [
+      {
+        "title": "Purpose",
+        "content": "This site provides tourism information about Sameba Cathedral for educational and informational purposes. We are not affiliated with the cathedral administration or the Georgian Orthodox Church."
+      },
+      {
+        "title": "Accuracy",
+        "content": "Information is sourced from public resources and may not always be current. We recommend verifying opening hours and access details before your visit via Google Maps or official tourism channels."
+      },
+      {
+        "title": "Intellectual Property",
+        "content": "Site design and original content are protected. Photos are sourced from Unsplash under their license. Google Maps content is subject to Google's terms."
+      },
+      {
+        "title": "Limitation of Liability",
+        "content": "We are not liable for any damages arising from the use of information on this site. Travel and visit decisions are your own responsibility."
+      }
+    ]
+  },
+  "cookieSettings": {
+    "title": "Cookie Settings",
+    "backHome": "← Back to Home",
+    "intro": "Manage your cookie preferences below. Essential cookies are required for the site to function.",
+    "essential": {
+      "title": "Essential Cookies",
+      "description": "Required for language preference, theme selection, and basic site functionality. These cannot be disabled.",
+      "status": "Always Active"
+    },
+    "analytics": {
+      "title": "Analytics Cookies",
+      "description": "Help us understand how visitors interact with the site. Data is anonymized and used only to improve the visitor experience."
+    },
+    "thirdParty": {
+      "title": "Third-Party Cookies",
+      "description": "Used by embedded services like Google Maps. Disabling may affect map functionality."
+    },
+    "save": "Save Preferences"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "ka": "ქართული",
+    "en": "English",
+    "ru": "Русский",
+    "zh-Hant": "繁體中文",
+    "zh-Hans": "简体中文"
+  }
+}
