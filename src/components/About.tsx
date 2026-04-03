@@ -8,6 +8,13 @@ export default function About() {
   return (
     <section id="about" className="py-24 sm:py-32">
       <div className="max-w-5xl mx-auto px-6">
+        {/* Disclaimer banner */}
+        <div className="mb-12 p-6 rounded-2xl bg-accent/10 dark:bg-accent/20 border border-accent/30">
+          <p className="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed text-center">
+            {t('about.disclaimer')}
+          </p>
+        </div>
+
         {/* Section header */}
         <div className="max-w-3xl mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-6 tracking-tight">
