@@ -59,7 +59,11 @@
       "Interior candlelight creating a spiritual atmosphere",
       "Aerial view showing the cathedral complex",
       "Night illumination of the cathedral"
-    ]
+    ],
+    "viewOriginal": "View Original",
+    "photoSource": "Photo collection sourced from Google Maps, last updated 2026",
+    "viewAll": "To view all images, please click the arrow to navigate to",
+    "clickHere": "click here"
   },
   "reviews": {
     "title": "Real Visitor Reviews",

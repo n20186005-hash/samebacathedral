@@ -2,11 +2,7 @@
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 
-const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1565008576549-57569a49371d?w=1920&q=80',
-  'https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?w=1920&q=80',
-  'https://images.unsplash.com/photo-1567606404132-28c0bfc5ba87?w=1920&q=80',
-];
+const HERO_IMAGE = '/gallery/images (1).jpg';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -16,12 +12,11 @@ export default function Hero() {
     <section className="relative w-full h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src={HERO_IMAGES[0]}
+        src={HERO_IMAGE}
         alt={t('hero.subtitle')}
         fill
         className="object-cover"
         priority
-        unoptimized
       />
 
       {/* Gradient overlay */}
