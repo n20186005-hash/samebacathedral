@@ -57,7 +57,7 @@ export default function BlogPostPage() {
           </p>
         </header>
 
-        <div className="prose prose-lg dark:prose-invert prose-neutral max-w-none">
+        <div className="prose prose-lg dark:prose-invert prose-neutral max-w-none text-neutral-900 dark:text-white">
           {content.split('\n').map((paragraph, index) => (
             paragraph.trim() ? <p key={index}>{paragraph}</p> : <br key={index} />
           ))}
