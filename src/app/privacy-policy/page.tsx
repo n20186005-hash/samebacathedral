@@ -54,6 +54,12 @@ export default function PrivacyPolicyPage() {
             </p>
           </section>
         </div>
+
+        <div className="mt-12 p-6 rounded-xl bg-neutral-50 dark:bg-neutral-900/50 border border-neutral-200 dark:border-neutral-800">
+          <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">
+            {t('tripDisclaimer')}
+          </p>
+        </div>
       </div>
 
       <footer className="border-t border-neutral-200 dark:border-neutral-800">

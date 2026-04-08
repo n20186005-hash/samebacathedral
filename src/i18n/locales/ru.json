@@ -2,15 +2,38 @@
   "site": {
     "title": "Собор Самеба"
   },
+  "tripDisclaimer": "Этот веб-сайт содержит рекламные и партнерские ссылки, предоставленные www.trip.com. Когда вы совершаете бронирование по этим ссылкам, мы можем получить комиссию без дополнительных затрат для вас.",
   "meta": {
     "title": "Собор Самеба – Свято-Троицкий кафедральный собор Тбилиси",
     "description": "Полный путеводитель по собору Самеба (Свято-Троицкий кафедральный собор) – крупнейшему собору Грузии. Часы работы, фотографии, отзывы и советы путешественникам."
+  },
+  "blog": {
+    "title": "Latest Blog Posts",
+    "subtitle": "Discover more stories and travel tips about Sameba Cathedral",
+    "viewAll": "View All Posts",
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "posts": {
+      "history-of-sameba": {
+        "title": "History of Sameba Cathedral",
+        "excerpt": "Explore the story and construction process behind this magnificent building.",
+        "date": "2026-04-10",
+        "content": "The Holy Trinity Cathedral of Tbilisi, commonly known as Sameba, is the main cathedral of the Georgian Orthodox Church located in Tbilisi, the capital of Georgia. Constructed between 1995 and 2004, it is the third-tallest Eastern Orthodox cathedral in the world.\n\nThe cathedral was built to commemorate 1,500 years of autocephaly of the Georgian Orthodox Church and 2,000 years from the birth of Jesus. Its architecture blends traditional styles of Georgian church architecture with some Byzantine undertones. The golden dome can be seen from almost anywhere in Tbilisi, making it one of the city's most prominent landmarks."
+      },
+      "visitor-tips": {
+        "title": "2026 Visitor Guide & Tips",
+        "excerpt": "Best time to visit, dress code, and must-see hidden spots.",
+        "date": "2026-04-05",
+        "content": "Visiting Sameba Cathedral is an unforgettable experience. To make the most of your visit, we recommend arriving early in the morning or late in the afternoon before sunset when the lighting is best for photography.\n\n**Dress Code:** As a religious site, visitors are required to dress modestly. Women are expected to cover their heads, shoulders, and knees. Men should wear long trousers. If you don't have a headscarf, there are usually free scarves available to borrow at the entrance.\n\nDon't forget to spend some time walking around the surrounding gardens, which offer a peaceful environment and great panoramic views of the city."
+      }
+    }
   },
   "nav": {
     "about": "О соборе",
     "gallery": "Галерея",
     "reviews": "Отзывы",
     "guide": "Путеводитель",
+    "blog": "Блог",
     "map": "Карта",
     "home": "Главная"
   },

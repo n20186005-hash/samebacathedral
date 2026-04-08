@@ -16,17 +16,23 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { key: 'about', href: '#about' },
-    { key: 'gallery', href: '#gallery' },
-    { key: 'reviews', href: '#reviews' },
-    { key: 'guide', href: '#guide' },
-    { key: 'map', href: '#map' },
+    { key: 'about', href: '/#about' },
+    { key: 'gallery', href: '/#gallery' },
+    { key: 'reviews', href: '/#reviews' },
+    { key: 'guide', href: '/#guide' },
+    { key: 'blog', href: '/blog' },
   ];
 
   const scrollTo = (href: string) => {
     setMenuOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (href.startsWith('/#')) {
+      const el = document.querySelector(href.substring(1));
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+    }
+    window.location.href = href;
   };
 
   return (

@@ -84,6 +84,70 @@ export default function Guide() {
             );
           })}
         </div>
+
+        {/* Trip.com Tours Links */}
+        <div className="mt-16 p-8 rounded-2xl bg-white dark:bg-neutral-800/50 border border-neutral-100 dark:border-neutral-800">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="text-neutral-400 dark:text-neutral-500">
+              <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">
+              周边游览路线推荐 (Powered by Trip.com)
+            </h3>
+          </div>
+          <ul className="space-y-4">
+            <li>
+              <a href="https://www.trip.com/t/pJoQPuLZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>從第比利斯出發：姆茨赫塔、十字修道院、哥里及烏普利斯齊赫王朝一日遊</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/hIOsasWZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>第比利斯：姆茨赫塔十字市集、喬治亞紀事紀念碑及葡萄酒之旅</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/ZQ0oOYYZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>從第比利斯出發的魔法卡赫季之旅 – 西格納吉、博德貝與編年史之旅</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/4UzsRFbZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>第比利斯：古多里及卡茲貝吉一日遊（含四驅車）</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/ssPwvDdZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>第比利斯：卡赫季地區，西格納吉之旅連9次品酒體驗</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/7p32n1fZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>西格納吉（愛之城）+女修道院+紅酒體驗+第比利斯海（包車）</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/8QotX3hZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>慢遊第比利斯海：將日子浸在湖藍與晴空裡的一天【格魯吉亞】</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.trip.com/t/sLLlgCjZDU2" target="_blank" className="text-accent hover:text-accent-dark transition-colors flex items-start gap-3">
+                <span className="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-accent" />
+                <span>第比利斯高架電車道+格魯吉亞之母雕像+里克公園+第比利斯海</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   );
