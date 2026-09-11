@@ -8,8 +8,8 @@
   },
   "tripDisclaimer": "This website contains advertisements and affiliate links provided by www.trip.com. When you make a booking through these links, we may earn a commission at no additional cost to you.",
   "meta": {
-    "title": "Sameba Cathedral – Holy Trinity Cathedral of Tbilisi",
-    "description": "Complete visitor guide to Sameba Cathedral (Holy Trinity Cathedral), the largest cathedral in Georgia. Hours, photos, reviews, and travel tips."
+    "title": "Sameba Cathedral Tbilisi: Hours, Dress Code & Visitor Guide 2026",
+    "description": "Sameba Cathedral (Holy Trinity Cathedral Tbilisi) — 2026 opening hours, dress code, mass times, bus & taxi from Freedom Square, interior frescoes and night lights. Address: MRX8+3H8 · Tel +995 571 00 29 42."
   },
   "tours": {
     "title": "Recommended Tours (Powered by Trip.com)",
@@ -45,6 +45,9 @@
   },
   "nav": {
     "about": "About",
+    "inside": "Inside",
+    "night": "At Night",
+    "mass": "Mass Schedule",
     "gallery": "Gallery",
     "reviews": "Reviews",
     "guide": "Visitor Guide",
@@ -63,6 +66,12 @@
     "ratingSource": "Google Maps",
     "openNow": "Open Now",
     "viewOnMap": "View on Google Maps",
+    "infoHoursLabel": "Opening Hours",
+    "infoHoursValue": "Daily 08:00 — 20:00",
+    "infoPhoneLabel": "Call Cathedral",
+    "infoAddressLabel": "Address",
+    "infoAddressValue": "MRX8+3H8 · Elia Hill",
+    "ctaTransport": "How to get from Freedom Square",
     "imageAlt": "Holy Trinity Cathedral of Tbilisi - Main view in Tbilisi, Georgia",
     "breadcrumb": "Holy Trinity Cathedral of Tbilisi → Tbilisi → Tbilisi → Georgia",
     "introParagraph": "Welcome to Holy Trinity Cathedral of Tbilisi, widely recognized as the central Sameba Cathedral. Located in the heart of Tbilisi, Tbilisi, Georgia, this destination serves as a primary hub for travelers visiting the region.",
@@ -239,7 +248,118 @@
     "phoneFull": "Phone: +995 571 002 942",
     "phoneLabel": "Contact",
     "govtPortal": "Georgia / Tbilisi Official Tourism Portal",
-    "openMaps": "Open in Google Maps"
+    "openMaps": "Open in Google Maps",
+    "ctaMassSchedule": "View Full Mass & Liturgy Schedule"
+  },
+  "transport": {
+    "title": "How to Get from Freedom Square (Tavisuplebis Moedani)",
+    "quickTitle": "Getting Here from Freedom Square",
+    "quickSubtitle": "The fastest ways to reach the cathedral on foot, by bus, metro or taxi",
+    "quickCallLabel": "Need live info?",
+    "quickCallText": "Call the cathedral office directly for today's service schedule, temporary closures or feast day changes.",
+    "routes": [
+      {
+        "mode": "Bus / Minibus",
+        "summary": "Bus #391 or marshrutka from Freedom Square",
+        "detail": "Take bus #391 or a marshrutka toward Avlabari; the cathedral is a 5–10 minute uphill walk from the last stop.",
+        "time": "~20 min",
+        "price": "1 GEL"
+      },
+      {
+        "mode": "Metro",
+        "summary": "Metro to Avlabari + 10-minute walk",
+        "detail": "Ride the red line from Freedom Square (Tavisuplebis Moedani) to Avlabari, then walk uphill via Abuladze and Samghebro streets.",
+        "time": "~15 min",
+        "price": "1 GEL"
+      },
+      {
+        "mode": "Taxi / Bolt",
+        "summary": "Taxi direct to the cathedral terrace",
+        "detail": "Bolt or Yandex Taxi apps are cheap and reliable; ask for 'Sameba' (Holy Trinity Cathedral). Drop-off is at the main gate on Elia Hill.",
+        "time": "~10 min",
+        "price": "5–7 GEL"
+      },
+      {
+        "mode": "Walking",
+        "summary": "Walk through Old Town and Avlabari",
+        "detail": "A scenic 35–45 minute walk from Freedom Square across the Bridge of Peace and up into Avlabari, with panorama views of the gilded dome.",
+        "time": "~40 min",
+        "price": "Free"
+      }
+    ]
+  },
+  "inside": {
+    "kicker": "Sameba Inside · Frescoes & Dome",
+    "title": "Inside Sameba Cathedral — Frescoes, Dome & Iconostasis",
+    "intro": "A close reading of the cathedral interior: Pantocrator fresco 40 metres overhead, the gilded three-tier iconostasis, nine side chapels, and the polished stone floors where 15,000 worshippers gather for Georgian Orthodox liturgy.",
+    "highlights": [
+      {
+        "title": "Central Dome & Pantocrator Fresco",
+        "description": "The giant Pantocrator Christ fresco in the drum of the central dome blesses the congregation with outstretched arms. Arched windows in the eight-column drum flood the nave with light at midday."
+      },
+      {
+        "title": "Gilded Iconostasis & Royal Doors",
+        "description": "A three-tiered carved iconostasis with gilded royal doors and a central Deesis separates the nave from the sanctuary. Feast-day icons are displayed in strict canonical order."
+      },
+      {
+        "title": "Nine Chapels & Underground Baptistery",
+        "description": "The cathedral houses nine chapels, five of them underground. The cross-shaped full-immersion baptistery pool and mosaics of the Baptism of Christ in the Jordan are the highlights."
+      },
+      {
+        "title": "Natural Light & Acoustic",
+        "description": "Designed for Georgian polyphonic chant, the acoustics produce a seven-second natural reverberation across the nave. Morning light filters through the windows to bring the frescoes to life."
+      }
+    ],
+    "photoAlt": {
+      "0": "Sameba Cathedral interior 1 — Pantocrator fresco looking up into the central dome",
+      "1": "Sameba Cathedral interior 2 — gilded iconostasis and candlelight",
+      "2": "Sameba Cathedral interior 3 — underground chapel and baptistery",
+      "3": "Sameba Cathedral interior 4 — congregation and stone-paved nave"
+    },
+    "photoCaption": {
+      "0": "Central dome — Pantocrator Christ fresco",
+      "1": "Gilded three-tiered iconostasis",
+      "2": "Underground baptistery and stone font",
+      "3": "Frescoed nave and polished stone floor"
+    },
+    "tipTitle": "Interior Photography & Etiquette",
+    "tipText": "Photography is allowed inside without flash. Please keep voices low during divine liturgy. Mobile phones should be silenced and never used near the iconostasis or sanctuary during the Eucharistic prayers.",
+    "frescoLink": "Full fresco programme"
+  },
+  "night": {
+    "kicker": "Sameba At Night · Lights & Panorama",
+    "title": "Sameba Cathedral at Night — Golden Dome Over Tbilisi",
+    "intro": "After sunset the 101-metre gilded cupola of Sameba Cathedral is lit from below with warm floodlights, creating a silhouette visible across the entire Tbilisi basin and one of the city's most photographed night panoramas.",
+    "features": [
+      {
+        "title": "Illuminated Golden Dome",
+        "description": "Warm floodlights pick out the 24-carat gold-clad dome and the 7.5-metre cross. The illumination usually switches on after dark and stays lit through the evening."
+      },
+      {
+        "title": "Best Vantage Points",
+        "description": "Narikala Fortress and the Mother of Georgia statue on Sololaki ridge are the two most popular spots for capturing the gilded dome against the city skyline."
+      },
+      {
+        "title": "Best Timing",
+        "description": "Blue hour — 20 minutes after sunset — blends the warm cathedral light with a deep indigo sky, the ideal window for balanced night photography."
+      }
+    ],
+    "photoAlt": {
+      "0": "Sameba Cathedral at night 1 — illuminated golden dome against the Tbilisi skyline",
+      "1": "Sameba Cathedral at night 2 — dome glowing above city lights",
+      "2": "Sameba Cathedral at night 3 — cathedral night facade and street",
+      "3": "Sameba Cathedral at night 4 — distant night panorama"
+    },
+    "photoCaption": {
+      "0": "Night illumination — golden dome",
+      "1": "Sameba above the Tbilisi skyline",
+      "2": "Cathedral night facade",
+      "3": "Distant night panorama"
+    },
+    "tipTitle": "Best Night Viewpoint Tips",
+    "tipText": "The two most popular vantage points are Narikala Fortress (20 minute walk uphill from Rike Park) and the Mother of Georgia statue on Sololaki ridge. Blue hour 20 minutes after sunset gives the perfect mix of warm cathedral light and deep indigo sky.",
+    "tipBlueHour": "Blue hour: sunset + 20 min",
+    "tipDuration": "Stay: 45–60 min"
   },
   "sources": {
     "title": "Data & References",

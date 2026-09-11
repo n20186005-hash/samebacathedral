@@ -56,6 +56,7 @@ export const metadata: Metadata = {
     languages: {
       ka: `https://${DOMAIN_NAME}/`,
       en: `https://${DOMAIN_NAME}/`,
+      tr: `https://${DOMAIN_NAME}/`,
       ru: `https://${DOMAIN_NAME}/`,
       "zh-Hant": `https://${DOMAIN_NAME}/`,
       "zh-Hans": `https://${DOMAIN_NAME}/`,
@@ -233,6 +234,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="twitter:image:alt" content={`${ATTRACTION_FULL_NAME} in ${CITY_NAME}`} />
         <link rel="alternate" hrefLang="ka" href={`https://${DOMAIN_NAME}/`} />
         <link rel="alternate" hrefLang="en" href={`https://${DOMAIN_NAME}/`} />
+        <link rel="alternate" hrefLang="tr" href={`https://${DOMAIN_NAME}/`} />
         <link rel="alternate" hrefLang="ru" href={`https://${DOMAIN_NAME}/`} />
         <link rel="alternate" hrefLang="zh-Hant" href={`https://${DOMAIN_NAME}/`} />
         <link rel="alternate" hrefLang="zh-Hans" href={`https://${DOMAIN_NAME}/`} />

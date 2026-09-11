@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 const languages = [
   { code: 'ka', label: '\u10E5\u10D0\u10E0\u10D7\u10E3\u10DA\u10D8' },
   { code: 'en', label: 'English' },
+  { code: 'tr', label: 'T\u00FCrk\u00E7e' },
   { code: 'ru', label: '\u0420\u0443\u0441\u0441\u043A\u0438\u0439' },
   { code: 'zh-Hant', label: '\u7E41\u9AD4\u4E2D\u6587' },
   { code: 'zh-Hans', label: '\u7B80\u4F53\u4E2D\u6587' },

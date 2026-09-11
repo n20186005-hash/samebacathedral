@@ -1,6 +1,7 @@
 'use client';
 import { useEffect } from 'react';
 import '../i18n/config';
+import LocalizedHead from './LocalizedHead';
 
 export default function I18nProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
@@ -10,5 +11,10 @@ export default function I18nProvider({ children }: { children: React.ReactNode }
     document.documentElement.classList.toggle('dark', isDark);
   }, []);
 
-  return <>{children}</>;
+  return (
+    <>
+      <LocalizedHead />
+      {children}
+    </>
+  );
 }
