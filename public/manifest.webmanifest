@@ -1,0 +1,42 @@
+{
+  "name": "Holy Trinity Cathedral of Tbilisi - Sameba Cathedral Visitor Guide",
+  "short_name": "Sameba Cathedral",
+  "description": "Official visitor guide to the Holy Trinity Cathedral of Tbilisi (Sameba Cathedral), Georgia. Location map, opening hours, travel tips and nearby attractions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#171717",
+  "theme_color": "#171717",
+  "orientation": "portrait-primary",
+  "lang": "en",
+  "dir": "ltr",
+  "scope": "/",
+  "categories": ["travel", "lifestyle", "religion"],
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Visitor Guide",
+      "short_name": "Guide",
+      "description": "View complete visitor guide with dress code and transport info",
+      "url": "/#guide"
+    },
+    {
+      "name": "Location Map",
+      "short_name": "Map",
+      "description": "View location on map and get directions",
+      "url": "/#map"
+    },
+    {
+      "name": "Gallery",
+      "short_name": "Photos",
+      "description": "Browse photo gallery of the cathedral",
+      "url": "/#gallery"
+    }
+  ]
+}

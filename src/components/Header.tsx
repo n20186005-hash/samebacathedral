@@ -17,9 +17,15 @@ export default function Header() {
 
   const navItems = [
     { key: 'about', href: '/#about' },
+    { key: 'inside', href: '/#inside' },
+    { key: 'night', href: '/#night' },
+    { key: 'mass', href: '/mass-schedule' },
+    { key: 'history', href: '/history' },
+    { key: 'architecture', href: '/architecture' },
     { key: 'gallery', href: '/#gallery' },
     { key: 'reviews', href: '/#reviews' },
     { key: 'guide', href: '/#guide' },
+    { key: 'map', href: '/#map' },
     { key: 'blog', href: '/blog' },
   ];
 
@@ -46,12 +52,17 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-white"
+          className="flex flex-col"
+          aria-label={t('header.ariaLabel')}
         >
-          {t('site.title')}
+          <span className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">
+            {t('site.title')}
+          </span>
+          <span className="text-xs text-neutral-500 dark:text-neutral-400 hidden sm:block">
+            {t('header.subtitle')}
+          </span>
         </a>
 
-        {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <button
@@ -67,7 +78,6 @@ export default function Header() {
         <div className="flex items-center gap-3">
           <ThemeToggle />
           <LanguageToggle />
-          {/* Mobile hamburger */}
           <button
             className="md:hidden p-2"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -99,7 +109,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-t border-neutral-200 dark:border-neutral-700">
           <nav className="flex flex-col px-6 py-4 gap-4">

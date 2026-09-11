@@ -3,10 +3,10 @@ import { useState, useEffect, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
 import Image from 'next/image';
 
-const photos = Array.from({ length: 12 }, (_, i) => `/gallery/images (${i + 1}).jpg`);
+const photos = Array.from({ length: 16 }, (_, i) => `/gallery/images (${i + 1}).jpg`);
 const PHOTOS_PER_PAGE = 6;
 const TOTAL_PAGES = Math.ceil(photos.length / PHOTOS_PER_PAGE);
-const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/qdNpHuRo5UrsWY7LA';
+const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/WR4V932yRvQLWhos5';
 
 export default function Gallery() {
   const { t } = useTranslation();
@@ -62,9 +62,10 @@ export default function Gallery() {
               >
                 <Image
                   src={url}
-                  alt={t(`gallery.captions.${idx}`)}
+                  alt={t(`gallery.alts.${actualIndex % 8}`, { defaultValue: t(`gallery.captions.${idx % 8}`) })}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-end">
                   <span className="text-white text-sm px-4 pb-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-4 group-hover:translate-y-0">
@@ -156,9 +157,10 @@ export default function Gallery() {
           >
             <Image
               src={photos[lightboxIndex]}
-              alt={t(`gallery.captions.${lightboxIndex % PHOTOS_PER_PAGE}`)}
+              alt={t(`gallery.alts.${lightboxIndex % 8}`, { defaultValue: t(`gallery.captions.${lightboxIndex % 8}`) })}
               fill
               className="object-contain"
+              priority
             />
           </div>
 

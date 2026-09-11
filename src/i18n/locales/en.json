@@ -2,6 +2,10 @@
   "site": {
     "title": "Sameba Cathedral"
   },
+  "header": {
+    "subtitle": "Holy Trinity Cathedral of Tbilisi",
+    "ariaLabel": "Main navigation header for Sameba Cathedral website"
+  },
   "tripDisclaimer": "This website contains advertisements and affiliate links provided by www.trip.com. When you make a booking through these links, we may earn a commission at no additional cost to you.",
   "meta": {
     "title": "Sameba Cathedral – Holy Trinity Cathedral of Tbilisi",
@@ -19,8 +23,8 @@
     "tour8": "Tbilisi Aerial Tramway + Mother of Georgia Statue + Rike Park + Tbilisi Sea"
   },
   "blog": {
-    "title": "Latest Blog Posts",
-    "subtitle": "Discover more stories and travel tips about Sameba Cathedral",
+    "title": "History & Significance of Holy Trinity Cathedral of Tbilisi",
+    "subtitle": "Explore the construction history, spiritual significance, and practical visitor insights through our latest articles about Sameba Cathedral",
     "viewAll": "View All Posts",
     "readMore": "Read More",
     "backToBlog": "Back to Blog",
@@ -46,17 +50,22 @@
     "guide": "Visitor Guide",
     "blog": "Blog",
     "map": "Map",
-    "home": "Home"
+    "home": "Home",
+    "history": "History",
+    "architecture": "Architecture"
   },
   "hero": {
     "title": "თბილისის სამების საკათედრო ტაძარი",
     "subtitle": "Holy Trinity Cathedral of Tbilisi",
     "tagline": "The largest cathedral in Georgia and one of the largest Orthodox cathedrals in the world",
     "rating": "4.8/5",
-    "ratingCount": "15,635 reviews",
+    "ratingCount": "16,765 reviews",
     "ratingSource": "Google Maps",
     "openNow": "Open Now",
     "viewOnMap": "View on Google Maps",
+    "imageAlt": "Holy Trinity Cathedral of Tbilisi - Main view in Tbilisi, Georgia",
+    "breadcrumb": "Holy Trinity Cathedral of Tbilisi → Tbilisi → Tbilisi → Georgia",
+    "introParagraph": "Welcome to Holy Trinity Cathedral of Tbilisi, widely recognized as the central Sameba Cathedral. Located in the heart of Tbilisi, Tbilisi, Georgia, this destination serves as a primary hub for travelers visiting the region.",
     "tags": ["Cathedral", "Orthodox", "Architecture", "Tbilisi", "Heritage", "Landmark", "Photography", "Spiritual"]
   },
   "hours": {
@@ -73,8 +82,11 @@
     "sundayHours": "7:00 AM – 9:00 PM"
   },
   "about": {
-    "title": "About",
+    "title": "About Holy Trinity Cathedral of Tbilisi",
     "description": "Sameba Cathedral (Holy Trinity Cathedral) stands on the Elia Hill in Tbilisi, Georgia. Completed in 2004, it is the main cathedral of the Georgian Orthodox Church and the third tallest Eastern Orthodox cathedral in the world, reaching 84 meters.",
+    "intro": "Holy Trinity Cathedral of Tbilisi, also known as Sameba Cathedral, is located in Tbilisi, Tbilisi, Georgia. As the central cathedral of the Georgian Orthodox Church, it stands as one of the most important religious and architectural landmarks in the country, welcoming visitors from around the world.",
+    "nearbyTitle": "Landmarks & Attractions Around Sameba Cathedral",
+    "nearbyText": "When visiting Holy Trinity Cathedral of Tbilisi, visitors can easily explore surrounding historical landmarks and points of interest, including Narikala Fortress and Rike Park and Bridge of Peace.",
     "disclaimer": "This is an independent third-party travel information site aimed at providing objective visiting suggestions around Sameba Cathedral. Information is extracted from public resources (Georgian National Tourism Board/local tourism boards and Wikipedia/traveler contributions), combined with basic information from Google Maps.",
     "highlights": [
       "Largest cathedral in the South Caucasus region",
@@ -83,7 +95,14 @@
       "Built with traditional Georgian architectural elements",
       "Free entry – open to all visitors",
       "Peaceful gardens and panoramic city views"
-    ]
+    ],
+    "deepDiveTag": "Deep Dive",
+    "historyCTATitle": "Complete History & Spiritual Significance",
+    "historyCTADesc": "From the 1989 national awakening through the 15-year construction arc to the 2004 consecration on St. George's Day — full chronology, theological purpose, and post-Soviet legacy.",
+    "historyCTALink": "Read the full 15-year chronology",
+    "architectureCTATitle": "Sameba Cathedral Architectural Symbolism Decoded",
+    "architectureCTADesc": "Cruciform plan, five-dome composition, 101-metre gilded cupola, underground baptistery chapels, fresco programme, and the Georgian-Byzantine synthesis of architect Archil Mindiashvili.",
+    "architectureCTALink": "Explore the architectural symbology"
   },
   "gallery": {
     "title": "Gallery",
@@ -97,6 +116,16 @@
       "Interior candlelight creating a spiritual atmosphere",
       "Aerial view showing the cathedral complex",
       "Night illumination of the cathedral"
+    ],
+    "alts": [
+      "Near Sameba Cathedral - Narikala Fortress overlooking Tbilisi cityscape",
+      "Near Sameba Cathedral - Rike Park green lawns and walking paths",
+      "Near Sameba Cathedral - Old Town Tbilisi historic district and cobblestone streets",
+      "Near Sameba Cathedral - Bridge of Peace modern architectural span over Kura River",
+      "Near Sameba Cathedral - Metekhi Church perched on the cliff above Tbilisi",
+      "Near Sameba Cathedral - Tbilisi Botanical Garden entrance and greenery",
+      "Near Sameba Cathedral - Narikala Fortress walls with Sameba Cathedral golden dome in background",
+      "Near Sameba Cathedral - Rike Park fountain and city view during daylight"
     ],
     "viewOriginal": "View Original",
     "photoSource": "Photo collection sourced from Google Maps, last updated 2026",
@@ -159,8 +188,8 @@
     ]
   },
   "guide": {
-    "title": "Visitor Guide",
-    "subtitle": "Everything you need to know",
+    "title": "Landmarks & Attractions Around Sameba Cathedral",
+    "subtitle": "Complete practical guide including dress code, transport options, visiting tips, and nearby attractions",
     "dressCode": {
       "title": "Dress Code",
       "items": [
@@ -203,13 +232,25 @@
   },
   "map": {
     "title": "Location",
+    "sectionTitle": "Location & How to Visit Sameba Cathedral in Tbilisi",
+    "attractionName": "Holy Trinity Cathedral of Tbilisi (Sameba Cathedral)",
     "address": "MRX8+3H8, Tbilisi, Georgia",
     "phone": "+995 571 002 942",
+    "phoneFull": "Phone: +995 571 002 942",
+    "phoneLabel": "Contact",
+    "govtPortal": "Georgia / Tbilisi Official Tourism Portal",
     "openMaps": "Open in Google Maps"
   },
   "sources": {
     "title": "Data & References",
     "text": "This is an independent third-party tourism information site providing objective visitor guidance. Information is sourced from public resources (Georgian National Tourism Administration, Wikipedia, and visitor contributions) combined with Google Maps data.",
+    "govtText": "For official updates and regional tourism information, visit",
+    "govtPortal": "Georgia National Tourism Administration",
+    "patriarchate": "Georgian Orthodox Patriarchate",
+    "imageCredits": {
+      "title": "Image Copyright Statement",
+      "text": "All image property rights and copyrights displayed on this website belong to their respective photographers."
+    },
     "items": [
       "Google Maps – ratings, reviews, and location data",
       "Unsplash – photography",
@@ -218,6 +259,11 @@
     ]
   },
   "footer": {
+    "officialName": "Holy Trinity Cathedral of Tbilisi",
+    "georgianName": "თბილისის სამების საკათედრო ტაძარი",
+    "addressLabel": "Address",
+    "contactLabel": "Contact",
+    "imageCopyright": "Notice: All image property rights and copyrights displayed on this website belong to their respective original photographers. This site is for non-profit educational and informational purposes only.",
     "support": "For technical support, contact:",
     "rights": "© 2026 Sameba Cathedral Guide · All rights reserved.",
     "disclaimer": "This is an independent informational site and is not affiliated with the cathedral administration.",
@@ -302,5 +348,152 @@
     "ru": "Русский",
     "zh-Hant": "繁體中文",
     "zh-Hans": "简体中文"
+  },
+  "history": {
+    "kicker": "Deep Dive · Cultural Studies",
+    "crumbHome": "Home",
+    "crumbActive": "History & Spiritual Context",
+    "pageTitle": "History & Significance of Holy Trinity Cathedral of Tbilisi",
+    "pageSubtitle": "From post-Soviet national awakening to the consecration of Georgia's spiritual heart — the complete chronology, theological purpose, and living legacy of Sameba Cathedral.",
+    "metaPeriod": "1989 — 2004 · Ongoing",
+    "metaRead": "12 min read",
+    "metaSources": "Cross-referenced · 4 primary sources",
+    "sidePhotoAlt": "Consecration day of Holy Trinity Cathedral — November 23, 2004",
+    "sidePhotoTag": "23 November 2004",
+    "sidePhotoCaption": "Consecration on St. George's Day by Catholicos-Patriarch Ilia II, with hierarchs of the worldwide Orthodox Church in attendance.",
+    "readAlsoTitle": "Continue your cultural tour",
+    "readAlsoArchitecture": "Decipher Sameba Cathedral's architectural symbolism — cruciform plan, domes, and fresco program",
+    "readAlsoGuide": "Practical visitor guide — dress code, transport, and nearby Narikala Fortress",
+    "timelineKicker": "Chronology · 15-year construction arc",
+    "timelineTitle": "Constructing a National Cathedral — Milestones",
+    "timelineIntro": "A visual chronology from the 1989 national competition through the 2004 consecration, including the delayed post-Soviet political transition.",
+    "timelinePhotoAlt": "Panoramic view of Sameba Cathedral complex — bell tower, seminary, and surrounding monastery grounds",
+    "timelinePhotoCaption": "Beyond the main cathedral, the Sameba precinct houses a patriarchal residence, monastic quarters, a theological seminary, academy, library, and freestanding bell tower — functioning as the canonical seat of the Georgian Orthodox Patriarchate.",
+    "ctaTitle": "Planning a pilgrimage or cultural visit?",
+    "ctaSubtitle": "Pair this historical reading with our practical visitor guide to make the most of your time at the cathedral.",
+    "ctaGuide": "Open Visitor Guide",
+    "ctaArchitecture": "Read Architectural Symbology",
+    "chapters": [
+      {
+        "heading": "National Awakening — The 1989 Idea & Competition",
+        "paragraphs": [
+          "In 1989, amid Georgia's final years of Soviet rule, an open architectural competition was announced for a cathedral that would embody the nation's 1,500 years of Orthodox autocephaly and the approaching 2,000th anniversary of Christianity. The jury, composed of architects, clergy, and public figures, sought a design that was unmistakably Georgian, yet capable of expressing the grandeur of a national sanctuary rather than simply scaling up a medieval church.",
+          "More than one hundred concept designs were submitted. The winner, a young Georgian architect named Archil Mindiashvili, proposed a five-dome cruciform cathedral synthesizing medieval Georgian hall-church typologies with Byzantine central-planning principles. Crucially, the design placed the complex on Elia Hill, an elevated ridge overlooking the historic Avlabari district — a site deliberately chosen to place the cathedral within sight of the ancient Narikala Fortress, symbolically bridging Georgia's medieval kingdom with its post-Soviet future."
+        ]
+      },
+      {
+        "heading": "Groundbreaking & the 1995 Foundation",
+        "paragraphs": [
+          "The formal groundbreaking took place on November 23, 1995 — exactly nine years before the final consecration. Patriarch Ilia II personally placed the first capsule in the foundation, surrounded by representatives of parliament and the presidency in newly independent Georgia. The date itself was significant: St. George's Day, the most widely celebrated religious feast in the country, and one to which every subsequent milestone was deliberately tied.",
+          "However, construction moved slowly during Georgia's immediate post-Soviet political turbulence: civil conflict in Abkhazia, economic collapse, and severe energy shortages of the early 1990s all delayed financing and logistics. Only after 2000, when the economy stabilised, did crane activity become visible across Tbilisi's skyline and donations from Georgian diaspora communities accelerated the schedule."
+        ]
+      },
+      {
+        "heading": "The Consecration — November 23, 2004",
+        "paragraphs": [
+          "The cathedral was solemnly consecrated on November 23, 2004 — St. George's Day — by Catholicos-Patriarch of All Georgia Ilia II, assisted by Patriarch Alexy II of Moscow and All Russia, Patriarch Filaret of Kyiv, Archbishop Christodoulos of Athens, and nearly one hundred hierarchs of the Eastern Orthodox Church from across the world. The presence of this unprecedented pan-Orthodox gathering conferred enormous canonical weight upon the new cathedral, immediately elevating it to one of the symbolic centres of global Orthodox Christianity.",
+          "President Mikheil Saakashvili and the newly elected Rose Revolution government declared the day a national celebration. Tens of thousands of Georgians lined the road from Avlabari to the precinct, with hundreds of thousands more watching on national television as the 7.5-metre gilded cross was formally blessed. The consecration liturgy lasted nearly seven hours, broadcast live across the South Caucasus and on religious satellite channels worldwide."
+        ]
+      },
+      {
+        "heading": "Sameba Today — Living Cathedral & National Symbol",
+        "paragraphs": [
+          "Today, Sameba functions as both the liturgical centre of the Georgian Orthodox Church and the most recognisable national monument of independent Georgia. Sunday liturgies are celebrated by the Patriarch himself on major feast days, and the cathedral regularly hosts episcopal ordinations, diplomatic blessings, and state funerals of national significance.",
+          "The adjacent precinct buildings — the patriarchal residence, seminary, theological academy, museum, bell tower, and monastic quarters — now house a thriving community of clergy, scholars, students, and volunteers. Together with the cathedral, they form the most important single religious complex in the South Caucasus region and a visible reminder of Georgia's continuous Christian identity reaching back to the fourth century conversion of Kartli."
+        ]
+      }
+    ],
+    "timeline": [
+      { "year": "1989", "title": "National competition announced · Mindiashvili wins", "text": "Georgian architects submit more than 100 concept designs; 27-year-old Archil Mindiashvili is awarded first prize for a five-dome cruciform proposal in the national Georgian style, with a total intended height of 101 metres including the cross." },
+      { "year": "1991", "title": "Georgia regains independence · Site approved", "text": "With independence formally restored, the Holy Synod and newly elected government of Zviad Gamsakhurdia confirm Elia Hill in Avlabari as the cathedral precinct site, replacing earlier proposals to build in Mtskheta." },
+      { "year": "1995 Nov 23", "title": "Patriarch Ilia II lays the foundation capsule", "text": "On St. George's Day 1995, Patriarch Ilia II places a time capsule into the foundations, consecrating the site with holy water. The date initiates the nine-year construction arc leading to the consecration on the same feast." },
+      { "year": "1997–2000", "title": "Slow progress during post-Soviet crisis", "text": "Funding shortages and economic instability slow construction. Structural substructure and first level walls are built, but the dome drums are not yet erected. Donations from diaspora Georgians in Russia, Turkey, Europe, and the United States begin to supplement the state budget." },
+      { "year": "2001", "title": "Central drum & gilded dome erected", "text": "A symbolic engineering milestone: the 7.5-metre gilded cross is lifted atop the central drum, making the cathedral silhouette permanently visible across the Tbilisi basin. Church bells are blessed in a separate ceremony months later." },
+      { "year": "2002–2003", "title": "Frescoes begin · Interior fit-out", "text": "Georgian iconographers under Amiran Goglidze begin the monumental fresco program: Pantocrator in the dome, evangelists in the corner drums, Old and New Testament cycles in the aisles, and a Deesis over the royal doors of the iconostasis." },
+      { "year": "2004", "title": "Public opening on St. George's Day", "text": "Following the Rose Revolution earlier that year, the cathedral is formally opened to the public in summer. Liturgies are already held while decorative work continues in peripheral chapels and underground levels." },
+      { "year": "2004 Nov 23", "title": "Great Consecration by Pan-Orthodox Synod", "text": "Patriarch Ilia II, Patriarch Alexy II of Moscow, Archbishop Christodoulos of Athens, and nearly one hundred hierarchs from the worldwide Orthodox Church celebrate the consecration liturgy — the most important single Orthodox ceremony to be held in Georgia in modern times." }
+    ]
+  },
+  "architecture": {
+    "kicker": "Form & Symbolism · Architectural Treatise",
+    "crumbHome": "Home",
+    "crumbActive": "Architecture & Symbolism",
+    "pageTitle": "Architecture & Sacred Symbolism of Sameba Cathedral",
+    "pageSubtitle": "A guided reading of the cruciform plan, five-dome composition, 101-metre gilded cupola, fresco program, and Georgian-Byzantine synthesis — decoding the theological language behind Tbilisi's Holy Trinity Cathedral.",
+    "statHeightLabel": "Total Height",
+    "statHeight": "101 m",
+    "statAreaLabel": "Floor Area",
+    "statArea": "3,000 m²",
+    "statDomesLabel": "Domes",
+    "statDomes": "5 (1 + 4)",
+    "statCapacityLabel": "Capacity",
+    "statCapacity": "15,000",
+    "domePhotoAlt": "Interior view of the central dome — Pantocrator fresco and supporting drum at Sameba Cathedral",
+    "domePhotoCaption": "Central dome drum with the Pantocrator Christ fresco — four auxiliary corner domes echo the five-dome canonical scheme symbolic of Christ and the Four Evangelists.",
+    "symbolsTitle": "Sacred Symbolism at a Glance",
+    "symbols": [
+      { "name": "Five Domes (1 + 4)", "description": "Central dome = Christ Pantocrator; four smaller corner domes = the Four Evangelists (Matthew, Mark, Luke, John). A classic Byzantine arrangement revived in Georgian ecclesiastical architecture after a 400-year hiatus under Safavid and Imperial Russian rule." },
+      { "name": "Cruciform (Greek Cross) Plan", "description": "Four equal-length arms radiating from a central sanctuary mark the shape of the Cross of Christ. The extended narthex at the west symbolises the gradual progression from the secular world through baptism and the nave into the sanctuary of the divine." },
+      { "name": "101-Metre Total Height", "description": "The symbolic height intentionally exceeds any previous Orthodox cathedral in the region. The 7.5-metre gilded cross alone represents the absolute vertical centre of the Tbilisi skyline and can be seen from miles along the Mtkvari (Kura) river." },
+      { "name": "Nine Chapels (5 Underground)", "description": "Five underground chapels, including the baptistery, mirror the five upper domes and are dedicated to major pre-baptismal mysteries. The remaining four upper side-chapels serve for smaller, more intimate Divine Liturgies and for private prayer." },
+      { "name": "Natural Stone & Golden Foil", "description": "Light-coloured sandstone and tufa facades anchor the cathedral to its hilltop; the 24-carat gold leaf of the central dome reflects the sun across Tbilisi — a visual echo of the Transfiguration and the uncreated divine light." }
+    ],
+    "readAlsoTitle": "Continue your cultural tour",
+    "readAlsoHistory": "Full 15-year construction chronology and consecration ceremony of Holy Trinity Cathedral",
+    "readAlsoGuide": "Visitor dress code, photography rules, and access to underground baptistery chapels",
+    "planKicker": "Spatial Hierarchy · Cruciform Liturgy",
+    "planTitle": "Floor Plan — Liturgical Zones & Nine Chapels",
+    "planIntro": "Sameba Cathedral is organised around a Greek-cross (cruciform) nave. Below are the principal functional zones, including the five underground chapels and the elevated sanctuary (sanctuary) reserved for the celebrating clergy.",
+    "floorplan": [
+      { "zone": "Narthex", "detail": "Main ceremonial entry; open-air covered approach; free headscarves and wrap-skirts for visitors; first zone of transition from the world to the sacred precinct. Candles and prosphora bread are blessed here." },
+      { "zone": "Nave (Cruciform)", "detail": "The Greek-cross nave is 70.4 m long × 64.7 m wide; four radial aisles converge under the central dome where the faithful stand. Four massive piers clad in polished stone transfer the load of the 3,000-tonne drum to the bedrock of Elia Hill." },
+      { "zone": "Iconostasis & Royal Doors", "detail": "Three-tiered carved iconostasis with gilded royal doors, deacon doors, and a central Deesis flanked by feast-day icons. The iconostasis visually separates the nave from the sanctuary, echoing the Orthodox concept of a hidden heavenly altar." },
+      { "zone": "Sanctuary (Altar)", "detail": "Elevated eastern arm of the cross; table of preparation, altar table, and bishop's throne. Reserved exclusively for the bishop and celebrant clergy; the faithful approach only for communion through the royal doors at the end of liturgy." },
+      { "zone": "Upper Side Chapels", "detail": "Four corner chapels dedicated to archangels and select saints. Intimate, barrel-vaulted spaces fitted with individual iconostases and reserved for smaller weekday liturgies, weddings, and private memorial services." },
+      { "zone": "Baptistery (Underground)", "detail": "Western subterranean level, with full-immersion baptistery pool in the shape of a cross. Mosaics of the Baptism of Christ by the Jordan River cover the walls. Infants and adult catechumens are baptised here." },
+      { "zone": "Four Underground Chapels", "detail": "Two pairs of chapels flanking the baptistery: dedicated to the Theotokos, St. Nino (Equal-to-the-Apostles and enlightener of Georgia), St. Gregory of Khandzta, and St. David of Gareji. Used for private commemorative liturgies (panikhida)." },
+      { "zone": "Choir & Gallery", "detail": "First-floor western gallery for the mixed cathedral choir and for VIP guests; sound-reflecting surfaces shape the seven-second natural reverberation that defines Sameba's celebrated acoustics during polyphonic hymnody." },
+      { "zone": "Bell Tower & Precinct", "detail": "Detached campanile with 16 bells cast in Germany and Russia; connected colonnaded walkway to the patriarchal residence, seminary, academy, refectory, museum, and landscaped gardens of the Elia Hill perimeter." }
+    ],
+    "exteriorPhotoAlt": "Exterior facade — stone facing, carved arches, and gold-gilded central dome of Sameba Cathedral",
+    "exteriorPhotoCaption": "Light-toned natural stone cladding with recessed Georgian-style arched bays. The 7.5-metre gilded cross on the central dome is visible from most vantage points across the Tbilisi basin.",
+    "complexTitle": "The Sameba Cathedral Precinct — Beyond the Main Church",
+    "complexIntro": "The cathedral does not stand alone. The Elia Hill precinct forms an integrated monastic and administrative quarter, extending the sacred geometry of the main church into a lived landscape of prayer, study, and governance.",
+    "complexPhotoAlt": "Aerial perspective of the Sameba Cathedral complex showing surrounding monastery, seminary, gardens, and bell tower",
+    "complexPhotoCaption": "Precinct inventory (clockwise from the cathedral): free-standing bell tower, monastic cells and refectory, theological academy and seminary, patriarchal administrative residence, museum, conference hall, landscaped gardens, and perimeter walls with dedicated entry pavilions.",
+    "ctaTitle": "Travelling for spiritual or architectural reasons?",
+    "ctaSubtitle": "Combine this architectural reading with our practical visitor guide — dress code, underground chapels, and photography etiquette all included.",
+    "ctaGuide": "Open Visitor Guide",
+    "ctaHistory": "Read Full Construction History",
+    "sections": [
+      {
+        "heading": "Five-Dome Typology — Christ and the Four Evangelists",
+        "paragraphs": [
+          "Sameba Cathedral is built in a five-dome (1 + 4) composition that is among the most recognisable statements of Orthodox sacred architecture. The single massive central dome — supported by eight internal columns — represents Christ Pantocrator, the Almighty, gazing down upon the church below. Its supporting drum is pierced with tall arched windows that flood the nave with light at midday, and the interior of the cupola carries the gigantic Pantocrator fresco with arms extended in blessing over the congregation.",
+          "The four smaller corner domes carry the symbols of the Four Evangelists — Matthew the man, Mark the lion, Luke the ox, and John the eagle — arranged in perfect radial symmetry around Christ. This 1 + 4 pattern descends directly from sixth-century Byzantine prototypes such as the Church of the Holy Apostles in Constantinople (now lost) and was revived in medieval Georgia, notably at Bagrati Cathedral in Kutaisi and Svetitskhoveli in Mtskheta. Sameba is the largest modern cathedral anywhere to revive this exact scheme at true monumental scale."
+        ]
+      },
+      {
+        "heading": "Cruciform Plan — The Cross of Christ in Stone",
+        "paragraphs": [
+          "Ground-planning a cathedral in the shape of a cross is one of the oldest symbolic gestures in Christian architecture. At Sameba, architect Archil Mindiashvili chose a Greek (equal-armed) cross rather than the Western Latin long-cross, giving the building a strict four-fold symmetry that reinforces the dome's centrality. Each of the four arms terminates in a monumental arched facade portal and is flanked by two tiers of deeply recessed stone windows that create the rhythmic play of light and shadow so characteristic of medieval Georgian churches.",
+          "The progression from west to east along the principal axis has clear liturgical meaning. The visitor enters through the western narthex (a zone of preparation, where head coverings are borrowed and candles are lit), passes under a monumental arch into the nave, and finally looks through the iconostasis into the sanctuary — the easternmost arm reserved exclusively for clergy. A wide narthex additionally extends north-south to accommodate major pilgrimage days and state ceremonies, with wide side exits to the surrounding landscape gardens."
+        ]
+      },
+      {
+        "heading": "Materiality — Stone Facades & the Gilded Cupola",
+        "paragraphs": [
+          "The exterior is clad in a light, warm-toned sandstone quarried near the Tbilisi suburb of Lisi and detailed with hand-cut voussoirs and chamfers recalling the carved stonework of Svetitskhoveli Cathedral and the cave monasteries of Vardzia. Natural stone was deliberately chosen over concrete or modern panels to ensure the cathedral ages gracefully, with subtle patina and lichen growth deepening its colour palette over the coming centuries.",
+          "The central dome, by sharp contrast, is clad in 24-carat gold leaf applied to copper sheets — a material reference to the Biblical Temple and to Orthodox descriptions of the dome as a gateway to the heavens. The 7.5-metre cross surmounting the dome is stainless steel coated with the same gold leaf, visible from the Old Town, the Mtkvari river bridges, and even from the northern suburbs on clear mornings. At dusk, external floodlights directed upward create a silhouette visible for 30 kilometres, and the gilded cross is the first landmark aircraft see when descending into Tbilisi airport."
+        ]
+      },
+      {
+        "heading": "Fresco Programme — a Visible Theology",
+        "paragraphs": [
+          "The interior frescoes were executed between 2002 and 2005 by a large atelier of Georgian icon painters under the direction of Amiran Goglidze. The programme follows strict canonical order established by late Byzantine manuals: the Pantocrator in the dome, the prophets in the drum, the major feasts in the upper register of the nave, Christ's passion and resurrection in the lower register, and the lives of the twelve apostles along the side aisles. Local Georgian saints — St. Nino, St. David of Gareji, St. Gregory of Khandzta, and the 13 Assyrian Fathers — are integrated into the cycle as a visible affirmation of Georgia's 1,700-year Christian identity.",
+          "The most intricate frescoes are in the sanctuary apse: a monumental Platytera (Virgin Mary with outstretched hands, \"More Spacious than the Heavens\") above the altar table, flanked by cherubim and seraphim, and the Communion of the Apostles on the upper wall. Those who are granted access during the Divine Liturgy see the clergy serving beneath Mary's canopy — a theologically precise statement of the Eucharist being offered by Christ through the hands of the priesthood."
+        ]
+      }
+    ]
   }
 }
