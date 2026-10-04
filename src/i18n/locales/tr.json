@@ -48,7 +48,7 @@
     "subtitle": "Tiflis Kutsal Teslis Katedrali",
     "tagline": "Gürcistan'ın en büyük katedrali ve dünyanın en büyük Ortodoks katedrallerinden biri",
     "rating": "4.8/5",
-    "ratingCount": "16.765 yorum",
+    "ratingCount": "16.917 yorum",
     "ratingSource": "Google Maps",
     "openNow": "Şu anda açık",
     "viewOnMap": "Google Maps'te görüntüle",
@@ -72,13 +72,13 @@
     "friday": "Cuma",
     "saturday": "Cumartesi",
     "sunday": "Pazar",
-    "weekdayHours": "07:00 – 22:00",
-    "saturdayHours": "07:00 – 21:00",
-    "sundayHours": "07:00 – 21:00"
+    "weekdayHours": "08:00 – 20:00",
+    "saturdayHours": "08:00 – 20:00",
+    "sundayHours": "08:00 – 20:00"
   },
   "about": {
     "title": "Tiflis Kutsal Teslis Katedrali Hakkında",
-    "description": "Sameba Katedrali (Kutsal Teslis Katedrali), Gürcistan'ın Tiflis kentindeki Elia Tepesi'nde yer alır. 2004'te tamamlanan yapı, Gürcistan Ortodoks Kilisesi'nin ana katedrali ve 84 metre yüksekliğiyle dünyanın en yüksek üçüncü Doğu Ortodoks katedralidir.",
+    "description": "Sameba Katedrali (Kutsal Teslis Katedrali), Gürcistan'ın Tiflis kentindeki Elia Tepesi'nde yer alır. 2004 yılında takdis edilen yapı, Gürcistan Ortodoks Kilisesi'nin ana katedralidir ve haç dahil yaklaşık 101 metrelik toplam yüksekliğiyle Tiflis siluetinin en tanınan simgelerinden biridir.",
     "intro": "Sameba Katedrali olarak da bilinen Tiflis Kutsal Teslis Katedrali, Gürcistan'ın Tiflis kentinde yer alır. Gürcistan Ortodoks Kilisesi'nin ana katedrali olarak ülkenin en önemli dini ve mimari simgelerinden biridir ve dünyanın her yerinden ziyaretçi ağırlar.",
     "nearbyTitle": "Sameba Katedrali Çevresindeki Simge ve Görülecek Yerler",
     "nearbyText": "Tiflis Kutsal Teslis Katedrali'ni ziyaret ederken Narikala Kalesi, Rike Parkı ve Barış Köprüsü gibi çevredeki tarihi yapıları ve ilgi çekici noktaları kolayca keşfedebilirsiniz.",
@@ -123,13 +123,13 @@
       "Sameba Katedrali yakınında - Gündüz Rike Parkı fıskiyesi ve şehir manzarası"
     ],
     "viewOriginal": "Orijinali Gör",
-    "photoSource": "Google Maps'ten derlenen fotoğraf koleksiyonu, son güncelleme 2026",
+    "photoSource": "Google Maps'ten derlenen fotoğraf koleksiyonu, son güncelleme Ekim 2026",
     "viewAll": "Tüm görselleri görmek için lütfen oklara basarak ilerleyin",
     "clickHere": "buraya tıklayın"
   },
   "reviews": {
     "title": "Gerçek Ziyaretçi Yorumları",
-    "declaration": "Puanlar ve yorumlar Google Maps'ten alınmıştır (son güncelleme: 2026). Yalnızca doğrulanmış yüksek puanlı yorumlardan seçilmiş bir bölümünü gösteriyoruz. Tüm güncel yorumları görmek için aşağıdaki bağlantıya tıklayın.",
+    "declaration": "Puanlar ve yorumlar Google Maps'ten alınmıştır (son güncelleme: Ekim 2026). Yalnızca doğrulanmış yüksek puanlı yorumlardan seçilmiş bir bölümünü gösteriyoruz. Tüm güncel yorumları görmek için aşağıdaki bağlantıya tıklayın.",
     "moreReviews": "Google Maps'te tüm yorumları görün",
     "reviewsList": [
       {

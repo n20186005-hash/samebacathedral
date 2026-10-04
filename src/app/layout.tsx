@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import I18nProvider from "@/components/I18nProvider";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin", "cyrillic"], display: "swap" });
 
 const DOMAIN_NAME = "samebacathedral.com";
+const SITE_NAME = "Sameba Cathedral Guide";
+const ATTRACTION_GEORGIAN_NAME = "თბილისის სამების საკათედრო ტაძარი";
+const ATTRACTION_GEORGIAN_SHORT_NAME = "სამების საკათედრო ტაძარი";
 const ATTRACTION_FULL_NAME = "Holy Trinity Cathedral of Tbilisi";
 const ATTRACTION_SHORT_NAME = "Sameba Cathedral";
 const CITY_NAME = "Tbilisi";
@@ -24,56 +26,43 @@ const HERO_IMAGE = `/gallery/images (1).jpg`;
 
 export const metadata: Metadata = {
   title: {
-    default: `Sameba Cathedral Tbilisi: Hours, Dress Code & Visitor Guide 2026 | ${ATTRACTION_FULL_NAME}`,
-    template: `%s | Sameba Cathedral Tbilisi — ${ATTRACTION_SHORT_NAME} Guide`,
+    default: `სამების საკათედრო ტაძარი (Sameba), თბილისი – საათები, მისამართი და ფოტოები`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description: `Sameba Cathedral (Holy Trinity Cathedral Tbilisi) — 2026 opening hours, dress code, mass times, bus & taxi from Freedom Square, interior frescoes and night lights view. Address: MRX8+3H8 · Tel +995 571 00 29 42.`,
+  description: `თბილისის წმინდა სამების საკათედრო ტაძარი (Sameba): სამუშაო საათები, მისამართი, როგორ მივიდეთ, ჩაცმის წესები, ლიტურგიის ინფორმაცია, ფოტოები და ვიზიტის რჩევები.`,
   keywords: [
+    ATTRACTION_GEORGIAN_NAME,
+    ATTRACTION_GEORGIAN_SHORT_NAME,
     ATTRACTION_FULL_NAME,
     ATTRACTION_SHORT_NAME,
-    "Sameba Cathedral Tbilisi hours",
-    "Sameba Cathedral dress code",
-    `${ATTRACTION_SHORT_NAME} mass times`,
-    `${ATTRACTION_FULL_NAME} mass schedule`,
+    "სამება",
     "სამება თბილისი",
+    "სამების ტაძარი",
+    "სამების ეკლესია",
+    "sameba",
+    "sameba katedrali",
+    "sameba cathedral tbilisi",
+    `${ATTRACTION_SHORT_NAME} hours`,
+    `${ATTRACTION_SHORT_NAME} dress code`,
     "სამება ღამით",
     "სამება შიგნიდან",
-    "sameba katedrali",
-    "Holy Trinity Cathedral Tbilisi opening hours",
-    "Sameba Cathedral from Freedom Square bus",
+    "თბილისის სამების საკათედრო ტაძარი ფოტოები",
     `${ATTRACTION_FULL_NAME} ${CITY_NAME}`,
-    CITY_NAME,
-    COUNTRY_NAME,
-    "Orthodox Cathedral",
-    "Georgian Orthodox Church",
-    "visitor guide",
-    "travel",
-    "Tbilisi attractions",
-    "Georgia landmarks",
   ],
   alternates: {
     canonical: `https://${DOMAIN_NAME}`,
-    languages: {
-      ka: `https://${DOMAIN_NAME}/`,
-      en: `https://${DOMAIN_NAME}/`,
-      tr: `https://${DOMAIN_NAME}/`,
-      ru: `https://${DOMAIN_NAME}/`,
-      "zh-Hant": `https://${DOMAIN_NAME}/`,
-      "zh-Hans": `https://${DOMAIN_NAME}/`,
-      "x-default": `https://${DOMAIN_NAME}/`,
-    },
   },
   openGraph: {
-    title: `Sameba Cathedral Tbilisi: Hours, Dress Code & Mass Times | ${ATTRACTION_FULL_NAME}`,
-    description: `Complete 2026 visitor guide to Sameba Cathedral Tbilisi — opening hours, dress code, bus routes from Freedom Square, interior frescoes, night lights, and Georgian Orthodox mass schedule.`,
+    title: `სამების საკათედრო ტაძარი – Sameba Cathedral Tbilisi | საათები და ვიზიტი`,
+    description: `დამოუკიდებელი ვიზიტორთა გზამკვლევი სამების საკათედრო ტაძარზე: მისამართი, ჩაცმის წესები, ფოტოები, რუკა და პრაქტიკული რჩევები თბილისის სტუმრებისთვის.`,
     url: `https://${DOMAIN_NAME}`,
     type: "website",
-    siteName: ATTRACTION_SHORT_NAME,
-    locale: "en_US",
+    siteName: SITE_NAME,
+    locale: "ka_GE",
     images: [
       {
         url: HERO_IMAGE,
-        alt: `${ATTRACTION_FULL_NAME} — Sameba Cathedral interior dome & night view in ${CITY_NAME}`,
+        alt: `${ATTRACTION_GEORGIAN_NAME} — ოქროს გუმბათი და მთავარი ხედი თბილისში`,
         width: 1200,
         height: 630,
       },
@@ -81,8 +70,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `Sameba Cathedral Tbilisi: Hours, Dress Code & Mass Times 2026`,
-    description: `Sameba Cathedral (Holy Trinity Cathedral Tbilisi) — hours, dress code, taxi & bus from Freedom Square, interior frescoes, and Georgian Orthodox divine liturgy.`,
+    title: `სამების საკათედრო ტაძარი (Sameba), თბილისი`,
+    description: `სამების საკათედრო ტაძრის დამოუკიდებელი გზამკვლევი: საათები, მისამართი, ფოტოები და ვიზიტის რჩევები.`,
     images: [HERO_IMAGE],
   },
   metadataBase: new URL(`https://${DOMAIN_NAME}`),
@@ -102,13 +91,29 @@ export const metadata: Metadata = {
   },
 };
 
-const touristAttractionLd = {
+const websiteLd = {
   "@context": "https://schema.org",
-  "@type": "TouristAttraction",
-  "@id": `https://${DOMAIN_NAME}/#attraction`,
-  name: ATTRACTION_FULL_NAME,
-  alternateName: [ATTRACTION_SHORT_NAME, `${CITY_NAME} ${ATTRACTION_FULL_NAME}`],
-  description: `Comprehensive visitor guide to ${ATTRACTION_FULL_NAME} in ${CITY_NAME}, ${STATE_PROVINCE}, ${COUNTRY_NAME}. Large religious complex featuring a towering Georgian-style Orthodox cathedral, bell tower, monastery, and theological academy.`,
+  "@type": "WebSite",
+  "@id": `https://${DOMAIN_NAME}/#website`,
+  name: SITE_NAME,
+  url: `https://${DOMAIN_NAME}`,
+  inLanguage: "ka-GE",
+  description: `Independent visitor guide to ${ATTRACTION_GEORGIAN_NAME} in ${CITY_NAME}, ${COUNTRY_NAME}.`,
+};
+
+const churchLd = {
+  "@context": "https://schema.org",
+  "@type": "Church",
+  "@id": `https://${DOMAIN_NAME}/#church`,
+  name: ATTRACTION_GEORGIAN_NAME,
+  alternateName: [
+    ATTRACTION_FULL_NAME,
+    ATTRACTION_SHORT_NAME,
+    "Tsminda Sameba Cathedral",
+    ATTRACTION_GEORGIAN_SHORT_NAME,
+    "წმინდა სამების საკათედრო ტაძარი",
+  ],
+  description: `Independent visitor guide to ${ATTRACTION_FULL_NAME} in ${CITY_NAME}, ${COUNTRY_NAME}. This site is not the cathedral's official website.`,
   url: `https://${DOMAIN_NAME}`,
   image: [
     `https://${DOMAIN_NAME}/gallery/images%20(1).jpg`,
@@ -160,7 +165,7 @@ const faqPageLd = {
       name: `What are the opening hours for ${ATTRACTION_SHORT_NAME}?`,
       acceptedAnswer: {
         "@type": "Answer",
-        text: `${ATTRACTION_FULL_NAME} is open daily from 7:00 AM to 10:00 PM on weekdays, and 7:00 AM to 9:00 PM on weekends. Interior access may be restricted during religious services.`,
+        text: `Visitors commonly plan around 8:00 AM to 8:00 PM, but hours and interior access can change during liturgies, feast days, and religious events. Check Google Maps or call +995 571 00 29 42 before visiting.`,
       },
     },
     {
@@ -227,18 +232,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme:dark)').matches);if(d)document.documentElement.classList.add('dark')}catch(e){}})()`,
           }}
         />
-        <link rel="canonical" href={`https://${DOMAIN_NAME}`} />
-        <meta property="og:image" content={`https://${DOMAIN_NAME}/gallery/images%20(1).jpg`} />
-        <meta property="og:image:alt" content={`${ATTRACTION_FULL_NAME} in ${CITY_NAME}`} />
-        <meta name="twitter:image" content={`https://${DOMAIN_NAME}/gallery/images%20(1).jpg`} />
-        <meta name="twitter:image:alt" content={`${ATTRACTION_FULL_NAME} in ${CITY_NAME}`} />
-        <link rel="alternate" hrefLang="ka" href={`https://${DOMAIN_NAME}/`} />
-        <link rel="alternate" hrefLang="en" href={`https://${DOMAIN_NAME}/`} />
-        <link rel="alternate" hrefLang="tr" href={`https://${DOMAIN_NAME}/`} />
-        <link rel="alternate" hrefLang="ru" href={`https://${DOMAIN_NAME}/`} />
-        <link rel="alternate" hrefLang="zh-Hant" href={`https://${DOMAIN_NAME}/`} />
-        <link rel="alternate" hrefLang="zh-Hans" href={`https://${DOMAIN_NAME}/`} />
-        <link rel="alternate" hrefLang="x-default" href={`https://${DOMAIN_NAME}/`} />
         <link rel="manifest" href="/manifest.webmanifest" />
         <meta name="theme-color" content="#171717" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
@@ -247,7 +240,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-title" content={ATTRACTION_SHORT_NAME} />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(touristAttractionLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(churchLd) }}
         />
         <script
           type="application/ld+json"
@@ -255,7 +252,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${inter.className} antialiased`}>
-        <I18nProvider>{children}</I18nProvider>
+        {children}
       </body>
     </html>
   );

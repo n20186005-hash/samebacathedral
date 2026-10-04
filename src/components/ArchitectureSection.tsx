@@ -4,16 +4,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { getLocalizedAnchorPath, getLocalizedHomePath } from '@/lib/locale-routing';
 
 const EXTERIOR_PHOTO = '/gallery/images (4).jpg';
 const DOME_INTERIOR = '/gallery/images (2).jpg';
 const COMPLEX_AERIAL = '/gallery/images (7).jpg';
 
 export default function ArchitectureSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const symbols = t('architecture.symbols', { returnObjects: true }) as Array<{ name: string; description: string }>;
   const sections = t('architecture.sections', { returnObjects: true }) as Array<{ heading: string; paragraphs: string[] }>;
   const floorplan = t('architecture.floorplan', { returnObjects: true }) as Array<{ zone: string; detail: string }>;
+  const homePath = getLocalizedHomePath(i18n.language);
+  const guidePath = getLocalizedAnchorPath(i18n.language, 'guide');
 
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
@@ -27,7 +30,7 @@ export default function ArchitectureSection() {
             {t('architecture.kicker', 'Form & Symbolism · Architectural Treatise')}
           </div>
           <nav aria-label="breadcrumb" className="text-xs text-neutral-500 dark:text-neutral-400 mb-6 tracking-wide">
-            <Link href="/" className="hover:text-neutral-900 dark:hover:text-white transition-colors">{t('architecture.crumbHome', 'Home')}</Link>
+            <Link href={homePath} className="hover:text-neutral-900 dark:hover:text-white transition-colors">{t('architecture.crumbHome', 'Home')}</Link>
             <span className="mx-2">/</span>
             <span>{t('architecture.crumbActive', 'Architecture & Symbolism')}</span>
           </nav>
@@ -106,7 +109,7 @@ export default function ArchitectureSection() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/#guide" className="flex items-start gap-3 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors group">
+                      <Link href={guidePath} className="flex items-start gap-3 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors group">
                         <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-emerald-700 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                         <span>{t('architecture.readAlsoGuide', 'Visitor dress code, photography rules, and access to underground baptistery chapels')}</span>
                       </Link>
@@ -191,7 +194,7 @@ export default function ArchitectureSection() {
               {t('architecture.ctaSubtitle', 'Combine this architectural reading with our practical visitor guide — dress code, underground chapels, and photography etiquette all included.')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/#guide" className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors">
+              <Link href={guidePath} className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 text-sm font-medium hover:bg-neutral-800 dark:hover:bg-neutral-100 transition-colors">
                 {t('architecture.ctaGuide', 'Open Visitor Guide')}
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </Link>

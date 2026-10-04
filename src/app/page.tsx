@@ -1,42 +1,23 @@
-'use client';
-import Header from '@/components/Header';
-import Hero from '@/components/Hero';
-import PracticalInfo from '@/components/PracticalInfo';
-import About from '@/components/About';
-import Gallery from '@/components/Gallery';
-import Reviews from '@/components/Reviews';
-import Guide from '@/components/Guide';
-import MapEmbed from '@/components/MapEmbed';
-import Sources from '@/components/Sources';
-import Footer from '@/components/Footer';
-import BlogSection from '@/components/BlogSection';
-import { InsideSection, AtNightSection } from '@/components/InsideNightSections';
+import type { Metadata } from 'next';
+import HomePageContent from '@/components/HomePageContent';
+import I18nProvider from '@/components/I18nProvider';
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: 'https://samebacathedral.com/',
+    languages: {
+      ka: 'https://samebacathedral.com/',
+      en: 'https://samebacathedral.com/en',
+      ru: 'https://samebacathedral.com/ru',
+      'x-default': 'https://samebacathedral.com/',
+    },
+  },
+};
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <Hero />
-      <PracticalInfo />
-      <MapEmbed />
-      <div className="flex justify-center my-8">
-        <iframe src="https://www.trip.com/partners/ad/SB15266995?Allianceid=7974128&SID=300882170&trip_sub1=%E7%BE%85%E8%A8%95%E6%B2%B3%E5%8F%A3" style={{width: '728px', height: '90px', border: 'none'}} frameBorder="0" scrolling="no" id="SB15266995"></iframe>
-      </div>
-      <About />
-      <InsideSection />
-      <div className="flex justify-center my-8">
-        <iframe src="https://www.trip.com/partners/ad/SB15271426?Allianceid=7974128&SID=300882170&trip_sub1=" style={{width: '728px', height: '90px', border: 'none'}} frameBorder="0" scrolling="no" id="SB15271426"></iframe>
-      </div>
-      <Gallery />
-      <AtNightSection />
-      <div className="flex justify-center my-8">
-        <iframe src="https://www.trip.com/partners/ad/SB15271076?Allianceid=7974128&SID=300882170&trip_sub1=%E7%AC%AC%E6%AF%94%E5%88%A9%E6%96%AF" style={{width: '728px', height: '90px', border: 'none'}} frameBorder="0" scrolling="no" id="SB15271076"></iframe>
-      </div>
-      <Reviews />
-      <Guide />
-      <BlogSection />
-      <Sources />
-      <Footer />
-    </main>
+    <I18nProvider>
+      <HomePageContent />
+    </I18nProvider>
   );
 }

@@ -3,11 +3,13 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import LanguageToggle from './LanguageToggle';
 import ThemeToggle from './ThemeToggle';
+import { getLocalizedAnchorPath, getLocalizedHomePath } from '@/lib/locale-routing';
 
 export default function Header() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const homePath = getLocalizedHomePath(i18n.language);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -16,23 +18,24 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { key: 'about', href: '/#about' },
-    { key: 'inside', href: '/#inside' },
-    { key: 'night', href: '/#night' },
+    { key: 'about', href: getLocalizedAnchorPath(i18n.language, 'about') },
+    { key: 'inside', href: getLocalizedAnchorPath(i18n.language, 'inside') },
+    { key: 'night', href: getLocalizedAnchorPath(i18n.language, 'night') },
     { key: 'mass', href: '/mass-schedule' },
     { key: 'history', href: '/history' },
     { key: 'architecture', href: '/architecture' },
-    { key: 'gallery', href: '/#gallery' },
-    { key: 'reviews', href: '/#reviews' },
-    { key: 'guide', href: '/#guide' },
-    { key: 'map', href: '/#map' },
+    { key: 'gallery', href: getLocalizedAnchorPath(i18n.language, 'gallery') },
+    { key: 'reviews', href: getLocalizedAnchorPath(i18n.language, 'reviews') },
+    { key: 'guide', href: getLocalizedAnchorPath(i18n.language, 'guide') },
+    { key: 'map', href: getLocalizedAnchorPath(i18n.language, 'map') },
     { key: 'blog', href: '/blog' },
   ];
 
   const scrollTo = (href: string) => {
     setMenuOpen(false);
-    if (href.startsWith('/#')) {
-      const el = document.querySelector(href.substring(1));
+    if (href.startsWith(`${homePath}#`) && window.location.pathname === homePath) {
+      const hash = href.slice(homePath.length);
+      const el = document.querySelector(hash);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });
         return;
@@ -51,7 +54,7 @@ export default function Header() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
-          href="#"
+          href={homePath}
           className="flex flex-col"
           aria-label={t('header.ariaLabel')}
         >

@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 
 const BASE_URL = 'https://samebacathedral.com';
-const LAST_MODIFIED = new Date('2026-09-11');
+const LAST_MODIFIED = new Date('2026-10-04');
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

@@ -1,6 +1,8 @@
 'use client';
 import { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { usePathname, useRouter } from 'next/navigation';
+import { getRouteLocaleFromPath, getLocalizedHomePath, isRoutedLocale } from '@/lib/locale-routing';
 
 const languages = [
   { code: 'ka', label: '\u10E5\u10D0\u10E0\u10D7\u10E3\u10DA\u10D8' },
@@ -13,6 +15,8 @@ const languages = [
 
 export default function LanguageToggle() {
   const { i18n } = useTranslation();
+  const pathname = usePathname();
+  const router = useRouter();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
@@ -31,6 +35,13 @@ export default function LanguageToggle() {
     localStorage.setItem('language', code);
     setOpen(false);
     document.documentElement.lang = code;
+
+    const currentRouteLocale = getRouteLocaleFromPath(pathname);
+    const isHomeRoute = !pathname || pathname === '/' || Boolean(currentRouteLocale && pathname === `/${currentRouteLocale}`);
+
+    if (isHomeRoute && (isRoutedLocale(code) || currentRouteLocale)) {
+      router.push(getLocalizedHomePath(code));
+    }
   };
 
   return (

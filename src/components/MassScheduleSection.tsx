@@ -3,11 +3,15 @@ import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import { getLocalizedAnchorPath, getLocalizedHomePath } from '@/lib/locale-routing';
 
 export default function MassScheduleSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const services = t('mass.services', { returnObjects: true }) as Array<{ day: string; time: string; service: string; language?: string }>;
   const feasts = t('mass.feasts', { returnObjects: true }) as Array<{ name: string; date: string; note: string }>;
+  const homePath = getLocalizedHomePath(i18n.language);
+  const guidePath = getLocalizedAnchorPath(i18n.language, 'guide');
+  const insidePath = getLocalizedAnchorPath(i18n.language, 'inside');
 
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
@@ -21,7 +25,7 @@ export default function MassScheduleSection() {
             {t('mass.kicker', 'Liturgy Schedule · Georgian Orthodox')}
           </div>
           <nav aria-label="breadcrumb" className="text-xs text-neutral-500 dark:text-neutral-400 mb-6 tracking-wide">
-            <Link href="/" className="hover:text-neutral-900 dark:hover:text-white transition-colors">{t('mass.crumbHome', 'Home')}</Link>
+            <Link href={homePath} className="hover:text-neutral-900 dark:hover:text-white transition-colors">{t('mass.crumbHome', 'Home')}</Link>
             <span className="mx-2">/</span>
             <span>{t('mass.crumbActive', 'Mass Schedule & Liturgy')}</span>
           </nav>
@@ -183,7 +187,7 @@ export default function MassScheduleSection() {
                 <p className="text-sm font-semibold text-neutral-900 dark:text-white">{t('mass.continueTitle', 'Continue Your Visit')}</p>
                 <ul className="space-y-3 text-sm">
                   <li>
-                    <Link href="/#guide" className="flex items-start gap-3 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors group">
+                    <Link href={guidePath} className="flex items-start gap-3 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors group">
                       <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-indigo-700 dark:text-indigo-400 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                       <span>{t('mass.continueGuide', 'Dress code, transport from Freedom Square, Narikala & Rike Park — full practical guide')}</span>
                     </Link>
@@ -195,7 +199,7 @@ export default function MassScheduleSection() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/#inside" className="flex items-start gap-3 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors group">
+                    <Link href={insidePath} className="flex items-start gap-3 text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors group">
                       <svg className="w-4 h-4 mt-0.5 flex-shrink-0 text-indigo-700 dark:text-indigo-400 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                       <span>{t('mass.continueInside', 'Interior frescoes, Pantocrator dome and 9 chapels — photo gallery inside Sameba Cathedral')}</span>
                     </Link>
