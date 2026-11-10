@@ -1,4 +1,6 @@
 'use client';
+import EditorialNotice from '@/components/EditorialNotice';
+import NearbyLinks from '@/components/NearbyLinks';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import PracticalInfo from '@/components/PracticalInfo';
@@ -17,6 +19,7 @@ export default function HomePageContent() {
     <main>
       <Header />
       <Hero />
+      <div className="max-w-6xl mx-auto px-6"><EditorialNotice /></div>
       <PracticalInfo />
       <MapEmbed />
       <div className="flex justify-center my-8">
@@ -34,6 +37,7 @@ export default function HomePageContent() {
       </div>
       <Reviews />
       <Guide />
+      <NearbyLinks />
       <BlogSection />
       <Sources />
       <Footer />

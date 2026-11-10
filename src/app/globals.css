@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Match the persisted html.dark preference used by the theme control. */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Custom properties for theming */
 :root {
   --bg-primary: #ffffff;
@@ -131,3 +134,7 @@ body {
   background: var(--accent);
   color: white;
 }
+
+/* Fixed-width partner creatives remain within the visitor viewport. */
+iframe { max-width: 100%; }
+.nearby-article, .editorial-notice { overflow-wrap: anywhere; }

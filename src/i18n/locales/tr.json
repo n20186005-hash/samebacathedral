@@ -44,20 +44,29 @@
     "architecture": "Mimari"
   },
   "hero": {
-    "title": "Tiflis Sameba Katedrali",
+    "title": "Sameba Katedrali, Tiflis",
     "subtitle": "Tiflis Kutsal Teslis Katedrali",
-    "tagline": "Gürcistan'ın en büyük katedrali ve dünyanın en büyük Ortodoks katedrallerinden biri",
+    "tagline": "Eski metin — doğrulanmadı: Gürcistan'ın en büyük katedrali ve dünyanın en büyük Ortodoks katedrallerinden biri",
     "rating": "4.8/5",
-    "ratingCount": "16.917 yorum",
-    "ratingSource": "Google Maps",
-    "openNow": "Şu anda açık",
+    "ratingCount": "17,158",
+    "ratingSource": "Google Maps · 2026-11-10",
+    "openNow": "Maps kaydı; gitmeden doğrulayın",
     "viewOnMap": "Google Maps'te görüntüle",
     "imageAlt": "Tiflis Kutsal Teslis Katedrali - Tiflis, Gürcistan'da ana görünüm",
     "breadcrumb": "Tiflis Kutsal Teslis Katedrali → Tiflis → Tiflis → Gürcistan",
     "introParagraph": "Yaygın olarak Sameba Katedrali olarak bilinen Tiflis Kutsal Teslis Katedrali'ne hoş geldiniz. Gürcistan'ın Tiflis kentinin kalbinde yer alan bu yapı, bölgeyi ziyaret eden gezginler için başlıca merkezdir.",
-    "tags": ["Katedral", "Ortodoks", "Mimari", "Tiflis", "Miras", "Simge", "Fotoğrafçılık", "Manevi"],
+    "tags": [
+      "Katedral",
+      "Ortodoks",
+      "Mimari",
+      "Tiflis",
+      "Miras",
+      "Simge",
+      "Fotoğrafçılık",
+      "Manevi"
+    ],
     "infoHoursLabel": "Ziyaret Saatleri",
-    "infoHoursValue": "Her gün 08:00 — 20:00",
+    "infoHoursValue": "Maps kaydı; gitmeden doğrulayın",
     "infoPhoneLabel": "Katedrali Ara",
     "infoAddressLabel": "Adres",
     "infoAddressValue": "MRX8+3H8 · Elia Tepesi",
@@ -72,55 +81,72 @@
     "friday": "Cuma",
     "saturday": "Cumartesi",
     "sunday": "Pazar",
-    "weekdayHours": "08:00 – 20:00",
-    "saturdayHours": "08:00 – 20:00",
-    "sundayHours": "08:00 – 20:00"
+    "weekdayHours": "07:00–22:00 · Google Maps · 2026-11-10",
+    "saturdayHours": "07:00–21:00 · Google Maps · 2026-11-10",
+    "sundayHours": "07:00–21:00 · Google Maps · 2026-11-10"
   },
   "about": {
     "title": "Tiflis Kutsal Teslis Katedrali Hakkında",
-    "description": "Sameba Katedrali (Kutsal Teslis Katedrali), Gürcistan'ın Tiflis kentindeki Elia Tepesi'nde yer alır. 2004 yılında takdis edilen yapı, Gürcistan Ortodoks Kilisesi'nin ana katedralidir ve haç dahil yaklaşık 101 metrelik toplam yüksekliğiyle Tiflis siluetinin en tanınan simgelerinden biridir.",
+    "description": "Georgia Travel: haç dâhil 86.1 m. Temel dâhil ölçüm aynı yükseklik değildir.",
     "intro": "Sameba Katedrali olarak da bilinen Tiflis Kutsal Teslis Katedrali, Gürcistan'ın Tiflis kentinde yer alır. Gürcistan Ortodoks Kilisesi'nin ana katedrali olarak ülkenin en önemli dini ve mimari simgelerinden biridir ve dünyanın her yerinden ziyaretçi ağırlar.",
     "nearbyTitle": "Sameba Katedrali Çevresindeki Simge ve Görülecek Yerler",
     "nearbyText": "Tiflis Kutsal Teslis Katedrali'ni ziyaret ederken Narikala Kalesi, Rike Parkı ve Barış Köprüsü gibi çevredeki tarihi yapıları ve ilgi çekici noktaları kolayca keşfedebilirsiniz.",
     "disclaimer": "Bu, Sameba Katedrali çevresinde objektif ziyaret önerileri sunmayı amaçlayan bağımsız bir üçüncü taraf seyahat bilgi sitesidir. Bilgiler kamuya açık kaynaklardan (Gürcistan Ulusal Turizm Kurulu/yerel turizm kurulları ve Wikipedia/gezgin katkıları) ve Google Maps temel verilerinden derlenmiştir.",
     "highlights": [
-      "Güney Kafkasya bölgesinin en büyük katedrali",
-      "Tiflis siluetinden görünen altın kubbeli başyapıt",
-      "Dini emanetler ve etkileyici freskler barındırır",
-      "Geleneksel Gürcü mimari unsurlarıyla inşa edilmiştir",
-      "Giriş ücretsizdir – tüm ziyaretçilere açıktır",
-      "Huzurlu bahçeler ve panoramik şehir manzarası"
+      "Eski metin — doğrulanmadı: Güney Kafkasya bölgesinin en büyük katedrali",
+      "Eski metin — doğrulanmadı: Tiflis siluetinden görünen altın kubbeli başyapıt",
+      "Eski metin — doğrulanmadı: Dini emanetler ve etkileyici freskler barındırır",
+      "Eski metin — doğrulanmadı: Geleneksel Gürcü mimari unsurlarıyla inşa edilmiştir",
+      "Eski metin — doğrulanmadı: Giriş ücretsizdir – tüm ziyaretçilere açıktır",
+      "Eski metin — doğrulanmadı: Huzurlu bahçeler ve panoramik şehir manzarası"
     ],
     "deepDiveTag": "Derinlemesine",
     "historyCTATitle": "Kapsamlı Tarih ve Manevi Önem",
-    "historyCTADesc": "1989 ulusal uyanışından 15 yıllık inşaat sürecine ve 2004'te Aziz Giorgi Günü'ndeki takdis törenine — tam kronoloji, teolojik amaç ve Sovyet sonrası miras.",
+    "historyCTADesc": "Eski metin — doğrulanmadı: 1989 ulusal uyanışından 15 yıllık inşaat sürecine ve 2004'te Aziz Giorgi Günü'ndeki takdis törenine — tam kronoloji, teolojik amaç ve Sovyet sonrası miras.",
     "historyCTALink": "15 yıllık tam kronolojiyi okuyun",
     "architectureCTATitle": "Sameba Katedrali'nin Mimari Sembolizmi",
-    "architectureCTADesc": "Haç planı, beş kubbeli kompozisyon, 101 metrelik yaldızlı kubbe, yeraltı vaftiz şapelleri, fresk programı ve mimar Archil Mindiashvili'nin Gürcü-Bizans sentezi.",
-    "architectureCTALink": "Mimari sembolizmi keşfedin"
+    "architectureCTADesc": "Eski metin — doğrulanmadı: Haç planı, beş kubbeli kompozisyon, 101 metrelik yaldızlı kubbe, yeraltı vaftiz şapelleri, fresk programı ve mimar Archil Mindiashvili'nin Gürcü-Bizans sentezi.",
+    "architectureCTALink": "Mimari sembolizmi keşfedin",
+    "earlierDescription": "Eski metin — doğrulanmadı: Sameba Katedrali (Kutsal Teslis Katedrali), Gürcistan'ın Tiflis kentindeki Elia Tepesi'nde yer alır. 2004 yılında takdis edilen yapı, Gürcistan Ortodoks Kilisesi'nin ana katedralidir ve haç dahil yaklaşık 101 metrelik toplam yüksekliğiyle Tiflis siluetinin en tanınan simgelerinden biridir."
   },
   "gallery": {
     "title": "Galeri",
     "subtitle": "Sameba Katedrali'ni fotoğraflarla keşfedin",
     "captions": [
-      "Gün batımında Sameba Katedrali'nin altın kubbesi",
-      "Süslü freskler ve ikonalarla görkemli iç mekan",
-      "Katedral avlusundan panoramik manzara",
-      "Taş cephe ve geleneksel Gürcü mimari detayları",
-      "Çan kulesi ve çevresindeki bahçeler",
-      "İç mekanda manevi bir atmosfer yaratan mum ışığı",
-      "Katedral kompleksini gösteren havadan görünüm",
-      "Katedralin gece ışıklandırması"
+      "Bulutlu günde Sameba ön cephesi",
+      "Sameba avlusundaki küçük şapelin dışı",
+      "Sameba’ya gündüz yaklaşımı",
+      "Sameba’nın gündüz yandan görünümü",
+      "Bulutlu havada Sameba çan kulesi",
+      "Gündüz Sameba avlusu ve çan kulesi",
+      "Alacakaranlıkta Sameba çan kulesi ve meydan",
+      "Sameba kompleksinde dinî resim ve altın renkli panel ayrıntısı",
+      "Sameba’nın gece yandan görünümü",
+      "Sameba ana girişi gece",
+      "Gündüz taş sütunlarla Sameba ön cephesi",
+      "Gündüz basamaklardan Sameba’ya bakış",
+      "Gün batımında Sameba çan kulesi",
+      "Sameba’nın gündüz yandan görünümü",
+      "Sameba Katedrali iç salonu",
+      "Alacakaranlıkta aydınlatılmış Sameba"
     ],
     "alts": [
-      "Sameba Katedrali yakınında - Tiflis şehir manzarasına bakan Narikala Kalesi",
-      "Sameba Katedrali yakınında - Rike Parkı'nın yeşil çimleri ve yürüyüş yolları",
-      "Sameba Katedrali yakınında - Tiflis Eski Şehir tarihi bölgesi ve Arnavut kaldırımlı sokaklar",
-      "Sameba Katedrali yakınında - Kura Nehri üzerindeki modern Barış Köprüsü",
-      "Sameba Katedrali yakınında - Tiflis'te kayalıkların üzerindeki Metekhi Kilisesi",
-      "Sameba Katedrali yakınında - Tiflis Botanik Bahçesi girişi ve yeşillikler",
-      "Sameba Katedrali yakınında - Narikala Kalesi surları ve arkada Sameba'nın altın kubbesi",
-      "Sameba Katedrali yakınında - Gündüz Rike Parkı fıskiyesi ve şehir manzarası"
+      "Bulutlu günde Sameba ön cephesi",
+      "Sameba avlusundaki küçük şapelin dışı",
+      "Sameba’ya gündüz yaklaşımı",
+      "Sameba’nın gündüz yandan görünümü",
+      "Bulutlu havada Sameba çan kulesi",
+      "Gündüz Sameba avlusu ve çan kulesi",
+      "Alacakaranlıkta Sameba çan kulesi ve meydan",
+      "Sameba kompleksinde dinî resim ve altın renkli panel ayrıntısı",
+      "Sameba’nın gece yandan görünümü",
+      "Sameba ana girişi gece",
+      "Gündüz taş sütunlarla Sameba ön cephesi",
+      "Gündüz basamaklardan Sameba’ya bakış",
+      "Gün batımında Sameba çan kulesi",
+      "Sameba’nın gündüz yandan görünümü",
+      "Sameba Katedrali iç salonu",
+      "Alacakaranlıkta aydınlatılmış Sameba"
     ],
     "viewOriginal": "Orijinali Gör",
     "photoSource": "Google Maps'ten derlenen fotoğraf koleksiyonu, son güncelleme Ekim 2026",
@@ -128,8 +154,8 @@
     "clickHere": "buraya tıklayın"
   },
   "reviews": {
-    "title": "Gerçek Ziyaretçi Yorumları",
-    "declaration": "Puanlar ve yorumlar Google Maps'ten alınmıştır (son güncelleme: Ekim 2026). Yalnızca doğrulanmış yüksek puanlı yorumlardan seçilmiş bir bölümünü gösteriyoruz. Tüm güncel yorumları görmek için aşağıdaki bağlantıya tıklayın.",
+    "title": "Yorumlar ve kaynak düzeltmesi",
+    "declaration": "Eski yorumların doğrulanabilir kaynak kaydı yoktur. Aşağıda eski ve doğrulanmamış metin olarak korunur; gerçek ziyaretçi beyanı olarak onaylanmaz. Güncel yorumlar Google Maps’tedir.",
     "moreReviews": "Google Maps'te tüm yorumları görün",
     "reviewsList": [
       {
@@ -184,7 +210,7 @@
   },
   "guide": {
     "title": "Sameba Katedrali Çevresindeki Simge ve Görülecek Yerler",
-    "subtitle": "Kıyafet kuralı, ulaşım seçenekleri, ziyaret ipuçları ve yakındaki görülecek yerleri içeren kapsamlı pratik rehber",
+    "subtitle": "Eski metin — doğrulanmadı: Kıyafet kuralı, ulaşım seçenekleri, ziyaret ipuçları ve yakındaki görülecek yerleri içeren kapsamlı pratik rehber",
     "dressCode": {
       "title": "Kıyafet Kuralı",
       "items": [
@@ -242,108 +268,108 @@
     "quickTitle": "Özgürlük Meydanı'ndan Ulaşım",
     "quickSubtitle": "Tiflis'te yürüyorsanız katedrale ulaşmanın en hızlı yolları — otobüs, metro ve taksi",
     "quickCallLabel": "Canlı bilgi mi lazım?",
-    "quickCallText": "Güncel ayin programı, geçici kapanışlar veya bayram değişiklikleri için katedral ofisini doğrudan arayın.",
+    "quickCallText": "Eski metin — doğrulanmadı: Güncel ayin programı, geçici kapanışlar veya bayram değişiklikleri için katedral ofisini doğrudan arayın.",
     "routes": [
       {
         "mode": "Otobüs / Minibüs",
         "summary": "Özgürlük Meydanı'ndan 391 numaralı otobüs veya minibüs",
-        "detail": "Avlabari yönüne giden 391 numaralı otobüse veya minibüse binin; son duraktan katedrale 5-10 dakikalık yokuş yürüyüş kaldı.",
-        "time": "~20 dk",
-        "price": "1 GEL"
+        "detail": "Eski metin — doğrulanmadı: Avlabari yönüne giden 391 numaralı otobüse veya minibüse binin; son duraktan katedrale 5-10 dakikalık yokuş yürüyüş kaldı.",
+        "time": "Eski metin — doğrulanmadı: ~20 dk",
+        "price": "Eski metin — doğrulanmadı: 1 GEL"
       },
       {
         "mode": "Metro",
         "summary": "Avlabari'ye metro + 10 dakika yürüyüş",
-        "detail": "Özgürlük Meydanı'ndan (Tavisuplebis Moedani) kırmızı hatta binip Avlabari'de inin, ardından Abuladze ve Samghebro sokaklarından yokuş yukarı yürüyün.",
-        "time": "~15 dk",
-        "price": "1 GEL"
+        "detail": "Eski metin — doğrulanmadı: Özgürlük Meydanı'ndan (Tavisuplebis Moedani) kırmızı hatta binip Avlabari'de inin, ardından Abuladze ve Samghebro sokaklarından yokuş yukarı yürüyün.",
+        "time": "Eski metin — doğrulanmadı: ~15 dk",
+        "price": "Eski metin — doğrulanmadı: 1 GEL"
       },
       {
         "mode": "Taksi / Bolt",
         "summary": "Doğrudan katedral terasına taksi",
-        "detail": "Bolt veya Yandex Taxi uygulamaları ucuz ve güvenilirdir; şoföre 'Sameba' (Kutsal Teslis Katedrali) deyin. İniş noktası Elia Tepesi'ndeki ana kapıdır.",
-        "time": "~10 dk",
-        "price": "5–7 GEL"
+        "detail": "Eski metin — doğrulanmadı: Bolt veya Yandex Taxi uygulamaları ucuz ve güvenilirdir; şoföre 'Sameba' (Kutsal Teslis Katedrali) deyin. İniş noktası Elia Tepesi'ndeki ana kapıdır.",
+        "time": "Eski metin — doğrulanmadı: ~10 dk",
+        "price": "Eski metin — doğrulanmadı: 5–7 GEL"
       },
       {
         "mode": "Yürüyüş",
         "summary": "Eski Şehir ve Avlabari üzerinden yürüyüş",
-        "detail": "Özgürlük Meydanı'ndan Barış Köprüsü'nü geçip Avlabari'ye 35-45 dakikalık manzaralı bir yürüyüş; yolda yaldızlı kubbenin panoramik görüntüsü sizi karşılar.",
-        "time": "~40 dk",
-        "price": "Ücretsiz"
+        "detail": "Eski metin — doğrulanmadı: Özgürlük Meydanı'ndan Barış Köprüsü'nü geçip Avlabari'ye 35-45 dakikalık manzaralı bir yürüyüş; yolda yaldızlı kubbenin panoramik görüntüsü sizi karşılar.",
+        "time": "Eski metin — doğrulanmadı: ~40 dk",
+        "price": "Eski metin — doğrulanmadı: Ücretsiz"
       }
     ]
   },
   "inside": {
     "kicker": "Sameba İç Mekan · Freskler ve Kubbe",
     "title": "Sameba Katedrali'nin İçi — Freskler, Kubbe ve İkonostas",
-    "intro": "Katedralin iç mekanına yakından bir bakış: 40 metre yukarıdaki Pantokrator freski, yaldızlı üç katmanlı ikonostas, dokuz yan şapel ve Gürcü Ortodoks lituryası için 15.000 ibadetçinin toplandığı cilalı taş zeminler.",
+    "intro": "Eski metin — doğrulanmadı: Katedralin iç mekanına yakından bir bakış: 40 metre yukarıdaki Pantokrator freski, yaldızlı üç katmanlı ikonostas, dokuz yan şapel ve Gürcü Ortodoks lituryası için 15.000 ibadetçinin toplandığı cilalı taş zeminler.",
     "highlights": [
       {
         "title": "Kubbe ve Pantokrator Freski",
-        "description": "Merkezi kubbenin tamburunda yer alan devasa Pantokrator İsa freski, kollarını cemaatin üzerine uzatarak kutsar. Sekiz sütunun taşıdığı tamburun kemerli pencereleri öğle vakti iç mekanı ışıkla doldurur."
+        "description": "Eski metin — doğrulanmadı: Merkezi kubbenin tamburunda yer alan devasa Pantokrator İsa freski, kollarını cemaatin üzerine uzatarak kutsar. Sekiz sütunun taşıdığı tamburun kemerli pencereleri öğle vakti iç mekanı ışıkla doldurur."
       },
       {
         "title": "Yaldızlı İkonostas ve Kraliyet Kapıları",
-        "description": "Üç katmanlı oyma ikonostas, yaldızlı kraliyet kapıları ve merkezde Deesis ile litürjik mekanı ayırır. Bayram günlerinde ikonalar özenle sergilenir."
+        "description": "Eski metin — doğrulanmadı: Üç katmanlı oyma ikonostas, yaldızlı kraliyet kapıları ve merkezde Deesis ile litürjik mekanı ayırır. Bayram günlerinde ikonalar özenle sergilenir."
       },
       {
         "title": "Dokuz Şapel ve Yeraltı Vaftizhanesi",
-        "description": "Katedral, beşi yeraltında olmak üzere dokuz şapel barındırır. Haç biçimli tam daldırma vaftiz havuzu ve Ürdün Nehri'nde İsa'nın vaftizini betimleyen mozaikler en dikkat çekici bölümlerdir."
+        "description": "Eski metin — doğrulanmadı: Katedral, beşi yeraltında olmak üzere dokuz şapel barındırır. Haç biçimli tam daldırma vaftiz havuzu ve Ürdün Nehri'nde İsa'nın vaftizini betimleyen mozaikler en dikkat çekici bölümlerdir."
       },
       {
         "title": "Doğal Işık ve Akustik",
-        "description": "Gürcü çok sesli ilahi geleneği için tasarlanmış akustik, yedi saniyelik doğal yankı ile katedral boyunca yankılanır. Sabah ışığı pencerelerden süzülerek freskleri canlandırır."
+        "description": "Eski metin — doğrulanmadı: Gürcü çok sesli ilahi geleneği için tasarlanmış akustik, yedi saniyelik doğal yankı ile katedral boyunca yankılanır. Sabah ışığı pencerelerden süzülerek freskleri canlandırır."
       }
     ],
     "photoAlt": {
-      "0": "Sameba Katedrali iç mekanı 1 — merkezi kubbeden aşağı bakan Pantokrator freski",
-      "1": "Sameba Katedrali iç mekanı 2 — yaldızlı ikonostas ve mum ışığı",
-      "2": "Sameba Katedrali iç mekanı 3 — yeraltı şapeli ve vaftizhanesi",
-      "3": "Sameba Katedrali iç mekanı 4 — cemaat ve taş zeminli nef"
+      "0": "Sameba avlusundaki küçük şapelin dışı",
+      "1": "Sameba kompleksinde dinî resim ve altın renkli panel ayrıntısı",
+      "2": "Sameba ana girişi gece",
+      "3": "Sameba Katedrali iç salonu"
     },
     "photoCaption": {
-      "0": "Merkezi kubbe — Pantokrator İsa freski",
-      "1": "Yaldızlı üç katmanlı ikonostas",
-      "2": "Yeraltı vaftizhanesi ve mermer havuz",
-      "3": "Fresklerle kaplı nef ve taş zemin"
+      "0": "Sameba avlusundaki küçük şapelin dışı",
+      "1": "Sameba kompleksinde dinî resim ve altın renkli panel ayrıntısı",
+      "2": "Sameba ana girişi gece",
+      "3": "Sameba Katedrali iç salonu"
     },
     "tipTitle": "İç Mekan Fotoğrafçılık ve Görgü Kuralları",
-    "tipText": "İç mekanda flaşsız fotoğraf çekmek genellikle serbesttir. Liturya sırasında sesinizi kısık tutun; cep telefonlarını sessize alın ve Efkaristiya duaları sırasında ikonostasın yakınında kullanmayın.",
+    "tipText": "Eski metin — doğrulanmadı: İç mekanda flaşsız fotoğraf çekmek genellikle serbesttir. Liturya sırasında sesinizi kısık tutun; cep telefonlarını sessize alın ve Efkaristiya duaları sırasında ikonostasın yakınında kullanmayın.",
     "frescoLink": "Tam fresk programı"
   },
   "night": {
     "kicker": "Gece Sameba · Işıklar ve Panorama",
     "title": "Gece Sameba Katedrali — Tiflis Üzerinde Altın Kubbe",
-    "intro": "Gün battıktan sonra Sameba Katedrali'nin 101 metrelik yaldızlı kubbesi alttan sıcak projektörlerle aydınlatılır; Tiflis havzasının her yerinden görünen ve şehrin en çok fotoğraflanan gece panoramalarından biri ortaya çıkar.",
+    "intro": "Eski metin — doğrulanmadı: Gün battıktan sonra Sameba Katedrali'nin 101 metrelik yaldızlı kubbesi alttan sıcak projektörlerle aydınlatılır; Tiflis havzasının her yerinden görünen ve şehrin en çok fotoğraflanan gece panoramalarından biri ortaya çıkar.",
     "features": [
       {
         "title": "Işıklandırılmış Altın Kubbe",
-        "description": "Sıcak projektör ışığı, 24 ayar altın kaplı kubbe ve 7,5 metrelik haçı vurgular. Işıklandırma genelde hava karardıktan sonra açılır ve gece boyunca sürer."
+        "description": "Eski metin — doğrulanmadı: Sıcak projektör ışığı, 24 ayar altın kaplı kubbe ve 7,5 metrelik haçı vurgular. Işıklandırma genelde hava karardıktan sonra açılır ve gece boyunca sürer."
       },
       {
         "title": "En İyi Bakış Noktaları",
-        "description": "Narikala Kalesi ve Sololaki sırtındaki Gürcistan Anası heykeli, katedralin altın kubbesini şehir siluetiyle birlikte çekmek için en popüler iki noktadır."
+        "description": "Eski metin — doğrulanmadı: Narikala Kalesi ve Sololaki sırtındaki Gürcistan Anası heykeli, katedralin altın kubbesini şehir siluetiyle birlikte çekmek için en popüler iki noktadır."
       },
       {
         "title": "En Uygun Zamanlama",
-        "description": "Mavi saat (gün batımından 20 dakika sonra), sıcak katedral ışığı ile koyu çivit mavisi gökyüzünü birleştirir. Kadraj ve denge açısından en ideal zaman penceresidir."
+        "description": "Eski metin — doğrulanmadı: Mavi saat (gün batımından 20 dakika sonra), sıcak katedral ışığı ile koyu çivit mavisi gökyüzünü birleştirir. Kadraj ve denge açısından en ideal zaman penceresidir."
       }
     ],
     "photoAlt": {
-      "0": "Sameba Katedrali gece 1 — Tiflis siluetine karşı aydınlatılmış altın kubbe",
-      "1": "Sameba Katedrali gece 2 — şehir ışıkları üzerinde parlayan kubbe",
-      "2": "Sameba Katedrali gece 3 — katedralin gece cephesi ve caddesi",
-      "3": "Sameba Katedrali gece 4 — uzaktan gece panoraması"
+      "0": "Sameba’nın gece yandan görünümü",
+      "1": "Sameba ana girişi gece",
+      "2": "Alacakaranlıkta aydınlatılmış Sameba",
+      "3": "Alacakaranlıkta Sameba çan kulesi ve meydan"
     },
     "photoCaption": {
-      "0": "Gece aydınlatması — altın kubbe",
-      "1": "Tiflis silueti üzerinde Sameba",
-      "2": "Katedralin gece cephesi",
-      "3": "Uzaktan gece panoraması"
+      "0": "Sameba’nın gece yandan görünümü",
+      "1": "Sameba ana girişi gece",
+      "2": "Alacakaranlıkta aydınlatılmış Sameba",
+      "3": "Alacakaranlıkta Sameba çan kulesi ve meydan"
     },
     "tipTitle": "En İyi Gece Manzarası İpuçları",
-    "tipText": "En popüler iki bakış noktası Narikala Kalesi (Rike Parkı'ndan 20 dakikalık yokuş yürüyüş) ve Sololaki sırtındaki Gürcistan Anası heykelidir. Gün batımından 20 dakika sonraki mavi saat, sıcak katedral ışığı ile koyu çivit mavisi gökyüzünün ideal karışımını sunar.",
+    "tipText": "Eski metin — doğrulanmadı: En popüler iki bakış noktası Narikala Kalesi (Rike Parkı'ndan 20 dakikalık yokuş yürüyüş) ve Sololaki sırtındaki Gürcistan Anası heykelidir. Gün batımından 20 dakika sonraki mavi saat, sıcak katedral ışığı ile koyu çivit mavisi gökyüzünün ideal karışımını sunar.",
     "tipBlueHour": "Mavi saat: gün batımı + 20 dk",
     "tipDuration": "Kalış: 45–60 dk"
   },
@@ -388,5 +414,14 @@
     "ru": "Русский",
     "zh-Hant": "繁體中文",
     "zh-Hans": "简体中文"
+  },
+  "mass": {
+    "pageTitle": "Sameba ayin ziyareti: güncel programı doğrulayın",
+    "pageSubtitle": "10 Kasım 2026’da katedralden doğrulanmış ayin programı belirlenemedi. Eski saatler yalnız doğrulanmamış kayıt olarak korunur; katılımı bunlara göre planlamayın. Açılış saatleri ayin saati değildir. Tarihe özel programı katedrale sorun.",
+    "scheduleTitle": "Sameba ayin ziyareti: güncel programı doğrulayın",
+    "scheduleNote": "10 Kasım 2026’da katedralden doğrulanmış ayin programı belirlenemedi. Eski saatler yalnız doğrulanmamış kayıt olarak korunur; katılımı bunlara göre planlamayın. Açılış saatleri ayin saati değildir. Tarihe özel programı katedrale sorun.",
+    "infoAttendanceValue": "Maps kaydı; gitmeden doğrulayın",
+    "services": [],
+    "feasts": []
   }
 }

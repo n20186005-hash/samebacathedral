@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
@@ -56,24 +57,24 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-col gap-3">
-            <a
+            <Link
               href="/privacy-policy"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
             >
               {t('footer.privacy')}
-            </a>
-            <a
+            </Link>
+            <Link
               href="/terms-of-service"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
             >
               {t('footer.terms')}
-            </a>
-            <a
+            </Link>
+            <Link
               href="/cookie-settings"
               className="text-sm text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors"
             >
               {t('footer.cookies')}
-            </a>
+            </Link>
           </div>
         </div>
 

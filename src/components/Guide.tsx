@@ -1,4 +1,5 @@
 'use client';
+import EditorialNotice from '@/components/EditorialNotice';
 import { useTranslation } from 'react-i18next';
 
 const sections = [
@@ -42,7 +43,7 @@ export default function Guide() {
 
   return (
     <section id="guide" className="py-24 sm:py-32 bg-neutral-50 dark:bg-neutral-900/50">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6"><EditorialNotice kind="legacy" />
         {/* Section header */}
         <div className="max-w-3xl mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight">

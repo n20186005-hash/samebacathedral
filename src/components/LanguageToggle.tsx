@@ -34,12 +34,16 @@ export default function LanguageToggle() {
     i18n.changeLanguage(code);
     localStorage.setItem('language', code);
     setOpen(false);
-    document.documentElement.lang = code;
+    document.documentElement.setAttribute('lang', code);
 
     const currentRouteLocale = getRouteLocaleFromPath(pathname);
-    const isHomeRoute = !pathname || pathname === '/' || Boolean(currentRouteLocale && pathname === `/${currentRouteLocale}`);
+    const normalizedPath = pathname.replace(/\/$/, '') || '/';
+    const isHomeRoute = normalizedPath === '/' || Boolean(currentRouteLocale && normalizedPath === `/${currentRouteLocale}`);
 
-    if (isHomeRoute && (isRoutedLocale(code) || currentRouteLocale)) {
+    if (pathname.includes('/nearby/')) {
+      const suffix = pathname.slice(pathname.indexOf('/nearby/'));
+      router.push(`${code === 'ka' ? '' : `/${code}`}${suffix}`);
+    } else if (isHomeRoute && (isRoutedLocale(code) || currentRouteLocale)) {
       router.push(getLocalizedHomePath(code));
     }
   };

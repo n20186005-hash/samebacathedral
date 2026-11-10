@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin", "cyrillic"], display: "swap" });
+const inter = localFont({ src: "../fonts/InterVariable.ttf", weight: "100 900", display: "swap" });
 
 const DOMAIN_NAME = "samebacathedral.com";
 const SITE_NAME = "Sameba Cathedral Guide";
@@ -19,8 +19,6 @@ const POSTAL_CODE = "0105";
 const LATITUDE = 41.69765157114227;
 const LONGITUDE = 44.81387181312111;
 const MAPS_SHARE_URL = "https://maps.app.goo.gl/WR4V932yRvQLWhos5";
-const NEARBY_LANDMARK_1 = "Narikala Fortress";
-const NEARBY_LANDMARK_2 = "Rike Park and Bridge of Peace";
 const GOVT_TOURISM_URL = "https://georgia.travel";
 const HERO_IMAGE = `/gallery/images (1).jpg`;
 
@@ -118,7 +116,6 @@ const churchLd = {
   image: [
     `https://${DOMAIN_NAME}/gallery/images%20(1).jpg`,
   ],
-  isAccessibleForFree: true,
   address: {
     "@type": "PostalAddress",
     streetAddress: `MRX8+3H8`,
@@ -137,77 +134,6 @@ const churchLd = {
   sameAs: [
     MAPS_SHARE_URL,
     GOVT_TOURISM_URL,
-  ],
-};
-
-const faqPageLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: `Where is ${ATTRACTION_FULL_NAME} located?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `${ATTRACTION_FULL_NAME} is located in ${CITY_NAME}, ${STATE_PROVINCE}, ${COUNTRY_NAME}. The address is MRX8+3H8, ${CITY_NAME}, ${COUNTRY_NAME}.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `Is ${ATTRACTION_SHORT_NAME} free to visit?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `Yes, ${ATTRACTION_FULL_NAME} is a public space and is free to visit year-round. Entry to the cathedral and grounds is open to all visitors without charge.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `What are the opening hours for ${ATTRACTION_SHORT_NAME}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `Visitors commonly plan around 8:00 AM to 8:00 PM, but hours and interior access can change during liturgies, feast days, and religious events. Check Google Maps or call +995 571 00 29 42 before visiting.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `How do I get to ${ATTRACTION_FULL_NAME} from central ${CITY_NAME}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `To reach ${ATTRACTION_SHORT_NAME}, take the Metro red line to Avlabari station (5-minute walk), buses 31/44/55 stop nearby, or a taxi from the city center costs approximately 5 GEL and takes 10 minutes.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `What is the dress code for visiting ${ATTRACTION_SHORT_NAME}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `As an active Georgian Orthodox religious site, modest dress is required: women must cover their heads with scarves and cover shoulders and knees; men must wear long trousers (no shorts). Headscarves and wraps are available for free at the entrance if needed.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `What landmarks are near ${ATTRACTION_FULL_NAME}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `Nearby landmarks include ${NEARBY_LANDMARK_1}, ${NEARBY_LANDMARK_2}, Old Town Abanotubani, Metekhi Church, and the Tbilisi Botanical Garden - all within 10-25 minutes walking distance.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `When was ${ATTRACTION_FULL_NAME} built?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `Construction of ${ATTRACTION_SHORT_NAME} began in November 1995 and was completed in 2004. The cathedral was solemnly consecrated on November 23, 2004, St. George's Day, by Catholicos-Patriarch Ilia II.`,
-      },
-    },
-    {
-      "@type": "Question",
-      name: `Is photography allowed inside ${ATTRACTION_SHORT_NAME}?`,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: `Photography is generally permitted inside ${ATTRACTION_FULL_NAME}, but flash photography is prohibited and filming during religious services should be avoided. Always be respectful of worshippers and keep voices low.`,
-      },
-    },
   ],
 };
 
@@ -246,10 +172,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(churchLd) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageLd) }}
-        />
+
       </head>
       <body className={`${inter.className} antialiased`}>
         {children}

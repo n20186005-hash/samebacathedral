@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 const BASE_URL = "https://samebacathedral.com";
 const SITE_NAME = "Sameba Cathedral Guide";
 
+export const dynamicParams = false;
+export function generateStaticParams() { return [{ slug: 'history-of-sameba' }, { slug: 'visitor-tips' }]; }
+
 const POST_SEO: Record<
   string,
   {
@@ -52,7 +55,7 @@ export async function generateMetadata({
     };
   }
 
-  const url = `${BASE_URL}/blog/${slug}`;
+  const url = `${BASE_URL}/blog/${slug}/`;
 
   return {
     title: post.title,
@@ -102,7 +105,7 @@ export default async function BlogPostLayout({
     return children;
   }
 
-  const url = `${BASE_URL}/blog/${slug}`;
+  const url = `${BASE_URL}/blog/${slug}/`;
 
   const articleLd = {
     "@context": "https://schema.org",

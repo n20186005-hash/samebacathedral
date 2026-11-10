@@ -1,11 +1,13 @@
 'use client';
+import { nearbyLabels, type NearbyLocale } from '@/lib/nearby';
 import { useTranslation } from 'react-i18next';
 
-const GOVT_TOURISM_URL = 'https://georgia.travel';
+const GOVT_TOURISM_URL = 'https://georgia.travel/holy-trinity-cathedral';
 const PATRIARCHATE_URL = 'https://patriarchate.ge';
 
 export default function Sources() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.language in nearbyLabels ? i18n.language : 'ka') as NearbyLocale;
   const items = t('sources.items', { returnObjects: true }) as string[];
 
   return (
@@ -16,7 +18,7 @@ export default function Sources() {
         </h2>
 
         <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-4">
-          {t('sources.text')}
+          {t('sources.text')} {nearbyLabels[lang][14]}
         </p>
 
         <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed mb-8 p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-800/30">

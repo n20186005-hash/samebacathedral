@@ -62,7 +62,7 @@ export default function Gallery() {
               >
                 <Image
                   src={url}
-                  alt={t(`gallery.alts.${actualIndex % 8}`, { defaultValue: t(`gallery.captions.${idx % 8}`) })}
+                  alt={t(`gallery.alts.${actualIndex}`, { defaultValue: t(`gallery.captions.${actualIndex}`) })}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                   loading="lazy"
@@ -157,7 +157,7 @@ export default function Gallery() {
           >
             <Image
               src={photos[lightboxIndex]}
-              alt={t(`gallery.alts.${lightboxIndex % 8}`, { defaultValue: t(`gallery.captions.${lightboxIndex % 8}`) })}
+              alt={t(`gallery.alts.${lightboxIndex}`, { defaultValue: t(`gallery.captions.${lightboxIndex}`) })}
               fill
               className="object-contain"
               priority

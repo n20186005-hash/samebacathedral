@@ -1,4 +1,5 @@
 'use client';
+import notes from '@/data/editorial-notes.json';
 import { useTranslation } from 'react-i18next';
 
 interface Review {
@@ -8,25 +9,9 @@ interface Review {
   text: string;
 }
 
-function StarRating({ count }: { count: number }) {
-  return (
-    <div className="flex gap-0.5">
-      {[...Array(5)].map((_, i) => (
-        <svg
-          key={i}
-          className={`w-4 h-4 ${i < count ? 'text-amber-400' : 'text-neutral-300 dark:text-neutral-600'}`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  );
-}
-
 export default function Reviews() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const lang = (i18n.language in notes ? i18n.language : 'ka') as keyof typeof notes;
   const reviewsList = t('reviews.reviewsList', { returnObjects: true }) as Review[];
 
   return (
@@ -42,7 +27,7 @@ export default function Reviews() {
           </p>
         </div>
 
-        {/* Review cards */}
+        <details className="border border-neutral-200 dark:border-neutral-800 rounded-xl p-5"><summary className="cursor-pointer font-medium mb-5">{notes[lang].archive}</summary>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {Array.isArray(reviewsList) && reviewsList.map((review, i) => (
             <div
@@ -58,7 +43,7 @@ export default function Reviews() {
                     {review.date}
                   </p>
                 </div>
-                <StarRating count={review.rating} />
+
               </div>
               <p className="text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed">
                 {review.text}
@@ -67,6 +52,7 @@ export default function Reviews() {
           ))}
         </div>
 
+        </details>
         {/* Google Maps reviews link */}
         <div className="mt-12 text-center">
           <a

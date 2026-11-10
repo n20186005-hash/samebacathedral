@@ -41,7 +41,7 @@ export default function Header() {
         return;
       }
     }
-    window.location.href = href;
+    window.location.assign(href);
   };
 
   return (
@@ -52,13 +52,13 @@ export default function Header() {
           : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
         <a
           href={homePath}
-          className="flex flex-col"
+          className="flex flex-1 flex-col min-w-0"
           aria-label={t('header.ariaLabel')}
         >
-          <span className="text-lg font-semibold tracking-tight text-neutral-900 dark:text-white">
+          <span className="block truncate sm:whitespace-normal sm:overflow-visible sm:text-clip text-sm sm:text-lg font-semibold leading-tight tracking-tight text-neutral-900 dark:text-white">
             {t('site.title')}
           </span>
           <span className="text-xs text-neutral-500 dark:text-neutral-400 hidden sm:block">
@@ -66,23 +66,13 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-8">
-          {navItems.map((item) => (
-            <button
-              key={item.key}
-              onClick={() => scrollTo(item.href)}
-              className="text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
-            >
-              {t(`nav.${item.key}`)}
-            </button>
-          ))}
-        </nav>
 
-        <div className="flex items-center gap-3">
+
+        <div className="flex shrink-0 items-center gap-3">
           <ThemeToggle />
           <LanguageToggle />
           <button
-            className="md:hidden p-2"
+            className="2xl:hidden p-2"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Menu"
           >
@@ -112,8 +102,20 @@ export default function Header() {
         </div>
       </div>
 
+      <nav className="hidden 2xl:flex max-w-7xl mx-auto px-6 py-2 items-center gap-6 overflow-x-auto whitespace-nowrap" aria-label={t('header.ariaLabel')}>
+          {navItems.map((item) => (
+            <button
+              key={item.key}
+              onClick={() => scrollTo(item.href)}
+              className="shrink-0 text-sm text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors"
+            >
+              {t(`nav.${item.key}`)}
+            </button>
+          ))}
+        </nav>
+
       {menuOpen && (
-        <div className="md:hidden bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-t border-neutral-200 dark:border-neutral-700">
+        <div className="2xl:hidden max-h-[calc(100dvh-6rem)] overflow-y-auto bg-white/95 dark:bg-neutral-900/95 backdrop-blur-md border-t border-neutral-200 dark:border-neutral-700">
           <nav className="flex flex-col px-6 py-4 gap-4">
             {navItems.map((item) => (
               <button

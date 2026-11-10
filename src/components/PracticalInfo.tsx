@@ -1,4 +1,5 @@
 'use client';
+import EditorialNotice from '@/components/EditorialNotice';
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
 
@@ -89,19 +90,20 @@ export default function PracticalInfo() {
           </a>
         </div>
 
+        <EditorialNotice kind="legacy" />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 min-w-0">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {Array.isArray(routes) &&
                 routes.map((r, i) => (
                   <div
                     key={i}
-                    className="p-5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800"
+                    className="min-w-0 p-5 rounded-2xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800"
                   >
-                    <div className="flex items-baseline justify-between gap-3 mb-2">
+                    <div className="flex min-w-0 flex-col items-start gap-1 mb-2">
                       <p className="text-sm font-bold text-neutral-900 dark:text-white">{r.mode}</p>
                       {(r.time || r.price) && (
-                        <span className="text-[11px] font-semibold text-emerald-700 dark:text-emerald-400 whitespace-nowrap">
+                        <span className="block min-w-0 max-w-full whitespace-normal [overflow-wrap:anywhere] text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
                           {r.time}
                           {r.time && r.price && ' · '}
                           {r.price}

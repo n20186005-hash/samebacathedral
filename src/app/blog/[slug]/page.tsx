@@ -2,6 +2,7 @@
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
+import EditorialNotice from '@/components/EditorialNotice';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -45,6 +46,7 @@ export default function BlogPostPage() {
           {t('blog.backToBlog', 'Back to Blog')}
         </Link>
         
+        <EditorialNotice kind="legacy" />
         <header className="mb-12">
           <div className="text-sm font-medium text-accent mb-4">
             {t(`blog.posts.${slug}.date`)}

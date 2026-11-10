@@ -1,5 +1,6 @@
 'use client';
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 
 const HTML_LANG: Record<string, string> = {
@@ -39,9 +40,12 @@ function upsertMeta(selector: string, attr: 'name' | 'property', key: string, co
  */
 export default function LocalizedHead() {
   const { t, i18n } = useTranslation();
+  const pathname = usePathname();
 
   useEffect(() => {
     const lang = i18n.language || 'ka';
+    document.documentElement.lang = HTML_LANG[lang] || 'en';
+    if (!['/', '/en', '/ru', '/tr', '/zh-Hans', '/zh-Hant'].includes(pathname.replace(/\/$/, '') || '/')) return;
     const title = t('meta.title', {
       defaultValue: 'Sameba Cathedral Tbilisi: Hours, Dress Code & Visitor Guide 2026',
     });
@@ -59,7 +63,7 @@ export default function LocalizedHead() {
     upsertMeta('meta[property="og:locale"]', 'property', 'og:locale', OG_LOCALE[lang] || 'en_US');
     upsertMeta('meta[name="twitter:title"]', 'name', 'twitter:title', title);
     upsertMeta('meta[name="twitter:description"]', 'name', 'twitter:description', description);
-  }, [t, i18n.language]);
+  }, [t, i18n.language, pathname]);
 
   return null;
 }

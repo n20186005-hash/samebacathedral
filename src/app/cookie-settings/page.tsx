@@ -1,31 +1,41 @@
 'use client';
 import { useTranslation } from 'react-i18next';
-import { useState, useEffect } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
+
+type CookieChoices = { analytics: boolean; thirdParty: boolean };
+function readCookiePreferences() {
+  try { return localStorage.getItem('cookiePreferences') || ''; } catch { return ''; }
+}
+function subscribeCookiePreferences(onChange: () => void) {
+  window.addEventListener('storage', onChange);
+  window.addEventListener('cookiepreferenceschange', onChange);
+  return () => {
+    window.removeEventListener('storage', onChange);
+    window.removeEventListener('cookiepreferenceschange', onChange);
+  };
+}
+function serverCookiePreferences() { return ''; }
+function parseCookieChoices(value: string): CookieChoices {
+  try {
+    const parsed = JSON.parse(value);
+    return { analytics: parsed?.analytics === true, thirdParty: parsed?.thirdParty === true };
+  } catch { return { analytics: false, thirdParty: false }; }
+}
 
 export default function CookieSettingsPage() {
   const { t } = useTranslation();
-  const [analytics, setAnalytics] = useState(false);
-  const [thirdParty, setThirdParty] = useState(false);
+  const stored = useSyncExternalStore(subscribeCookiePreferences, readCookiePreferences, serverCookiePreferences);
+  const [draft, setDraft] = useState<CookieChoices | null>(null);
   const [saved, setSaved] = useState(false);
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem('cookiePreferences');
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        if (parsed.analytics) setAnalytics(true);
-        if (parsed.thirdParty) setThirdParty(true);
-      }
-    } catch { /* ignore */ }
-  }, []);
-
+  const { analytics, thirdParty } = draft ?? parseCookieChoices(stored);
   const handleSave = () => {
     try {
       localStorage.setItem('cookiePreferences', JSON.stringify({ essential: true, analytics, thirdParty }));
-    } catch { /* ignore */ }
-    setSaved(true);
-    setTimeout(() => setSaved(false), 3000);
+      window.dispatchEvent(new Event('cookiepreferenceschange'));
+      setDraft(null);
+      setSaved(true);
+    } catch { setSaved(false); }
   };
 
   return (
@@ -75,7 +85,7 @@ export default function CookieSettingsPage() {
                   {t('cookieSettings.analytics.description', 'Help us understand how visitors interact with the site. Data is anonymized and used only to improve the visitor experience.')}
                 </p>
               </div>
-              <button type="button" onClick={() => { setAnalytics(!analytics); setSaved(false); }}
+              <button type="button" onClick={() => { setDraft({ analytics: !analytics, thirdParty }); setSaved(false); }}
                 className={`flex-shrink-0 mt-1 w-12 h-6 rounded-full relative transition-colors duration-200 ${analytics ? 'bg-blue-500' : 'bg-neutral-300 dark:bg-neutral-600'}`}
                 aria-label="Toggle analytics cookies">
                 <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-all duration-200 ${analytics ? 'left-6' : 'left-0.5'}`} />
@@ -92,7 +102,7 @@ export default function CookieSettingsPage() {
                   {t('cookieSettings.thirdParty.description', 'Used by embedded services like Google Maps. Disabling may affect map functionality.')}
                 </p>
               </div>
-              <button type="button" onClick={() => { setThirdParty(!thirdParty); setSaved(false); }}
+              <button type="button" onClick={() => { setDraft({ analytics, thirdParty: !thirdParty }); setSaved(false); }}
                 className={`flex-shrink-0 mt-1 w-12 h-6 rounded-full relative transition-colors duration-200 ${thirdParty ? 'bg-blue-500' : 'bg-neutral-300 dark:bg-neutral-600'}`}
                 aria-label="Toggle third-party cookies">
                 <div className={`absolute top-0.5 w-5 h-5 rounded-full bg-white shadow transition-all duration-200 ${thirdParty ? 'left-6' : 'left-0.5'}`} />

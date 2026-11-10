@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { resources } from '@/i18n/resources';
 import Script from "next/script";
 import MassScheduleSection from "@/components/MassScheduleSection";
 import I18nProvider from "@/components/I18nProvider";
@@ -7,14 +8,16 @@ const DOMAIN_NAME = "samebacathedral.com";
 const ATTRACTION_FULL_NAME = "Holy Trinity Cathedral of Tbilisi";
 const ATTRACTION_SHORT_NAME = "Sameba Cathedral";
 const CITY_NAME = "Tbilisi";
-const COUNTRY_NAME = "Georgia";
 const BASE_URL = `https://${DOMAIN_NAME}`;
-const PAGE_URL = `${BASE_URL}/mass-schedule`;
+const PAGE_URL = `${BASE_URL}/mass-schedule/`;
 const HERO_IMAGE = `${BASE_URL}/gallery/images (2).jpg`;
 
+const PAGE_TITLE = resources.ka.translation.mass.pageTitle;
+const PAGE_DESCRIPTION = "სამების ტაძარში მსახურებაზე დასწრება: მიმდინარე ოფიციალური განრიგი ვერ დადასტურდა. ვიზიტამდე ტაძარში გადაამოწმეთ კონკრეტული თარიღის ლიტურგია და დაშვება.";
+
 export const metadata: Metadata = {
-  title: `Mass Schedule — Holy Trinity Cathedral Tbilisi (Sameba) Liturgy Times 2026`,
-  description: `Sameba Cathedral (Holy Trinity Cathedral of Tbilisi, Georgia) 2026 mass schedule. Weekly Divine Liturgy, vespers, feast days, confession, dress code and communion instructions. Phone +995 571 00 29 42.`,
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   keywords: [
     "holy trinity cathedral of tbilisi mass schedule",
     "Sameba Cathedral mass times",
@@ -30,29 +33,28 @@ export const metadata: Metadata = {
     canonical: PAGE_URL,
   },
   openGraph: {
-    title: `Sameba Cathedral Mass Schedule 2026 — Holy Trinity Tbilisi Liturgy Times`,
-    description: `Weekly Georgian Orthodox divine liturgy, vespers, feast days, confession & preparation guide for Holy Trinity Cathedral (Sameba) Tbilisi, Georgia.`,
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     url: PAGE_URL,
     type: "article",
     siteName: `${ATTRACTION_SHORT_NAME} Guide`,
-    locale: "en_US",
+    locale: "ka_GE",
     images: [
       {
         url: HERO_IMAGE,
         width: 1200,
         height: 630,
-        alt: `Holy Trinity Cathedral Tbilisi — Sameba mass schedule & liturgy interior`,
+        alt: resources.ka.translation.gallery.alts[1],
       },
     ],
-    publishedTime: "2026-01-07T09:00:00+04:00",
-    modifiedTime: "2026-09-11T00:00:00+04:00",
+    modifiedTime: "2026-11-10T00:00:00+04:00",
     section: "Liturgy Schedule",
     tags: ["Divine Liturgy", "Georgian Orthodox", "Sameba Cathedral mass times", "Feast days Georgia"],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Sameba Cathedral Mass Schedule 2026 — Tbilisi Liturgy Hours`,
-    description: `Georgian Orthodox weekly divine liturgy, feast days and confession guide at Holy Trinity Cathedral Tbilisi.`,
+    title: PAGE_TITLE,
+    description: PAGE_DESCRIPTION,
     images: [HERO_IMAGE],
   },
   robots: {
@@ -70,9 +72,10 @@ export const metadata: Metadata = {
 const articleLd = {
   "@context": "https://schema.org",
   "@type": "Article",
+  inLanguage: "ka",
   "@id": `${PAGE_URL}#article`,
-  headline: `Mass Schedule & Divine Liturgy Times — ${ATTRACTION_FULL_NAME} (${ATTRACTION_SHORT_NAME})`,
-  description: `2026 weekly divine liturgy, vespers, major feast days, confession and Holy Communion preparation guide for ${ATTRACTION_SHORT_NAME} in Tbilisi, Georgia.`,
+  headline: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": PAGE_URL,
@@ -89,10 +92,9 @@ const articleLd = {
     url: BASE_URL,
   },
   image: [HERO_IMAGE],
-  datePublished: "2026-01-07",
-  dateModified: "2026-09-11",
+  dateModified: "2026-11-10",
   articleSection: "Liturgy Schedule",
-  articleBody: `Sameba Cathedral 2026 weekly mass schedule: Sunday Divine Liturgy at 9:00 AM with Patriarch Ilia II on major feast days. Weekday liturgies Monday-Saturday 8:00 AM. Vespers Saturday 18:00. St. George's Day November 23, Christmas January 7, Easter. Free entry, dress code enforced. Phone +995 571 00 29 42 for schedule updates.`,
+
   about: {
     "@type": "TouristAttraction",
     "@id": `${BASE_URL}/#attraction`,
@@ -115,13 +117,13 @@ const breadcrumbLd = {
     {
       "@type": "ListItem",
       position: 1,
-      name: "Home",
+      name: resources.ka.translation.nav.home,
       item: BASE_URL,
     },
     {
       "@type": "ListItem",
       position: 2,
-      name: `Mass Schedule ${ATTRACTION_SHORT_NAME}`,
+      name: PAGE_TITLE,
       item: PAGE_URL,
     },
   ],

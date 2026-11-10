@@ -2,12 +2,13 @@
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import Image from 'next/image';
+import EditorialNotice from '@/components/EditorialNotice';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getLocalizedAnchorPath, getLocalizedHomePath } from '@/lib/locale-routing';
 
 const EXTERIOR_PHOTO = '/gallery/images (4).jpg';
-const DOME_INTERIOR = '/gallery/images (2).jpg';
+const DOME_INTERIOR = '/gallery/images (15).jpg';
 const COMPLEX_AERIAL = '/gallery/images (7).jpg';
 
 export default function ArchitectureSection() {
@@ -21,6 +22,7 @@ export default function ArchitectureSection() {
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
       <Header />
+      <div className="max-w-5xl mx-auto px-6 pt-24"><EditorialNotice kind="legacy" /></div>
 
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 overflow-hidden border-b border-neutral-200 dark:border-neutral-800">
         <div className="absolute inset-0 bg-gradient-to-b from-neutral-50 to-white dark:from-neutral-900/60 dark:to-neutral-950" />

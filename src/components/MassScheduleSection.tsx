@@ -1,12 +1,16 @@
 'use client';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
+import notes from '@/data/editorial-notes.json';
+import EditorialNotice from '@/components/EditorialNotice';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getLocalizedAnchorPath, getLocalizedHomePath } from '@/lib/locale-routing';
 
 export default function MassScheduleSection() {
   const { t, i18n } = useTranslation();
+  const lang = (i18n.language in notes ? i18n.language : 'ka') as keyof typeof notes;
+  const note = notes[lang];
   const services = t('mass.services', { returnObjects: true }) as Array<{ day: string; time: string; service: string; language?: string }>;
   const feasts = t('mass.feasts', { returnObjects: true }) as Array<{ name: string; date: string; note: string }>;
   const homePath = getLocalizedHomePath(i18n.language);
@@ -16,6 +20,7 @@ export default function MassScheduleSection() {
   return (
     <div className="min-h-screen bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100">
       <Header />
+      <div className="max-w-5xl mx-auto px-6 pt-24"><EditorialNotice kind="mass" /></div>
 
       <section className="relative pt-32 pb-16 sm:pt-40 sm:pb-24 overflow-hidden border-b border-neutral-200 dark:border-neutral-800">
         <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/60 to-white dark:from-indigo-950/40 dark:to-neutral-950" />
@@ -46,7 +51,7 @@ export default function MassScheduleSection() {
             </div>
             <div className="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/40">
               <p className="text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-1">{t('mass.infoAttendance', 'Daily')}</p>
-              <p className="text-sm font-semibold text-neutral-900 dark:text-white leading-snug">{t('mass.infoAttendanceValue', '8:00 — 20:00 · Free entry')}</p>
+              <p className="text-sm font-semibold text-neutral-900 dark:text-white leading-snug">{note.hours}</p>
             </div>
           </div>
         </div>
@@ -62,7 +67,8 @@ export default function MassScheduleSection() {
               <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-8 text-neutral-900 dark:text-white">
                 {t('mass.scheduleTitle', 'Weekly Divine Liturgy & Vespers')}
               </h2>
-              <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
+              <p className="mb-5 text-sm leading-7">{note.mass}</p>
+              {Array.isArray(services) && services.length > 0 && <div className="rounded-2xl overflow-hidden border border-neutral-200 dark:border-neutral-800">
                 <table className="w-full text-sm">
                   <thead className="bg-neutral-50 dark:bg-neutral-900/60">
                     <tr>
@@ -81,7 +87,7 @@ export default function MassScheduleSection() {
                     {Array.isArray(services) && services.map((s, i) => (
                       <tr key={i} className="hover:bg-neutral-50/60 dark:hover:bg-neutral-900/30 transition-colors">
                         <td className="py-4 px-5 font-semibold text-neutral-900 dark:text-white">{s.day}</td>
-                        <td className="py-4 px-5 text-indigo-700 dark:text-indigo-300 font-mono text-[13px]">{s.time}</td>
+                        <td className="py-4 px-5 text-indigo-700 dark:text-indigo-300 font-mono text-[13px]">{note.prefix}{s.time}</td>
                         <td className="py-4 px-5 text-neutral-700 dark:text-neutral-300 leading-relaxed">
                           <span className="block font-medium text-neutral-900 dark:text-white mb-0.5">{s.service}</span>
                           {s.language && <span className="text-xs text-neutral-500 dark:text-neutral-400">{s.language}</span>}
@@ -90,7 +96,7 @@ export default function MassScheduleSection() {
                     ))}
                   </tbody>
                 </table>
-              </div>
+              </div>}
               <p className="mt-5 text-xs text-neutral-500 dark:text-neutral-400 leading-relaxed italic">
                 {t('mass.scheduleNote', 'Note: Service times may be extended on major feast days. Confirm by calling +995 571 00 29 42 before planning a pilgrimage visit.')}
               </p>

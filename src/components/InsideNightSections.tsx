@@ -1,5 +1,6 @@
 'use client';
 import { useTranslation } from 'react-i18next';
+import EditorialNotice from '@/components/EditorialNotice';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -11,10 +12,10 @@ const INSIDE_PHOTOS = [
 ];
 
 const NIGHT_PHOTOS = [
-  '/gallery/images (3).jpg',
-  '/gallery/images (6).jpg',
   '/gallery/images (9).jpg',
-  '/gallery/images (14).jpg',
+  '/gallery/images (10).jpg',
+  '/gallery/images (16).jpg',
+  '/gallery/images (7).jpg',
 ];
 
 export function InsideSection() {
@@ -23,7 +24,7 @@ export function InsideSection() {
 
   return (
     <section id="inside" className="py-24 sm:py-32 bg-white dark:bg-neutral-950">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto px-6"><EditorialNotice kind="legacy" />
         <div className="max-w-3xl mb-16">
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-rose-700 dark:text-rose-400 mb-4">
             {t('inside.kicker', 'Sameba Inside · Interior Views')}

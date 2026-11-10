@@ -9,7 +9,7 @@ function BlogIndexPageContent() {
     <main className="min-h-screen bg-white dark:bg-neutral-950 pt-20">
       <Header />
       <div className="py-12">
-        <BlogSection />
+        <BlogSection indexPage />
       </div>
       <Footer />
     </main>

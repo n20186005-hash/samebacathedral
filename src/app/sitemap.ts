@@ -1,63 +1,17 @@
 import type { MetadataRoute } from 'next';
-
+export const dynamic = 'force-static';
+import { ALL_LOCALES, languageAlternates, localizedPath } from '@/lib/locale-routing';
+import { nearbySlugs } from '@/lib/nearby';
 const BASE_URL = 'https://samebacathedral.com';
-const LAST_MODIFIED = new Date('2026-10-04');
-
+const checked = new Date('2026-11-10');
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: `${BASE_URL}/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
-    {
-      url: `${BASE_URL}/mass-schedule/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/architecture/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/history/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${BASE_URL}/blog/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
-      url: `${BASE_URL}/blog/history-of-sameba/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/blog/visitor-tips/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${BASE_URL}/privacy-policy/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-    {
-      url: `${BASE_URL}/terms-of-service/`,
-      lastModified: LAST_MODIFIED,
-      changeFrequency: 'yearly',
-      priority: 0.3,
-    },
-  ];
+  const translated = ['/', ...nearbySlugs.map(slug => `/nearby/${slug}/`)];
+  const entries: MetadataRoute.Sitemap = translated.flatMap(path => ALL_LOCALES.map(lang => ({
+    url: `${BASE_URL}${localizedPath(lang, path)}`,
+    lastModified: checked,
+    changeFrequency: 'monthly' as const,
+    priority: path === '/' ? 1 : 0.8,
+    alternates: { languages: languageAlternates(path) },
+  })));
+  return [...entries, ...['mass-schedule', 'architecture', 'history', 'blog', 'blog/history-of-sameba', 'blog/visitor-tips', 'privacy-policy', 'terms-of-service', 'cookie-settings'].map(path => ({ url: `${BASE_URL}/${path}/`, lastModified: checked, changeFrequency: 'monthly' as const, priority: 0.6 }))];
 }

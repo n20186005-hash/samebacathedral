@@ -2,7 +2,8 @@
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 
-export default function BlogSection() {
+export default function BlogSection({ indexPage = false }: { indexPage?: boolean }) {
+  const Heading = indexPage ? 'h1' : 'h2';
   const { t } = useTranslation();
 
   const posts = [
@@ -15,9 +16,9 @@ export default function BlogSection() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16">
           <div className="max-w-2xl">
-            <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight">
+            <Heading className="text-3xl sm:text-4xl font-bold text-neutral-900 dark:text-white mb-4 tracking-tight">
               {t('blog.title', 'Latest Blog Posts')}
-            </h2>
+            </Heading>
             <p className="text-base text-neutral-600 dark:text-neutral-400">
               {t('blog.subtitle', 'Discover more stories and travel tips about Sameba Cathedral')}
             </p>

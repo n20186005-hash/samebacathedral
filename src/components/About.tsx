@@ -25,6 +25,7 @@ export default function About() {
           <p className="text-lg text-neutral-600 dark:text-neutral-300 leading-relaxed">
             {t('about.description')}
           </p>
+          <details className="mt-5 text-sm text-neutral-500 leading-7"><summary className="cursor-pointer">{t('reviews.title')}</summary><p>{t('about.earlierDescription')}</p></details>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
