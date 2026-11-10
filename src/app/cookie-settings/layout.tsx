@@ -1,3 +1,4 @@
+import I18nProvider from '@/components/I18nProvider';
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -23,5 +24,5 @@ export const metadata: Metadata = {
 };
 
 export default function LegalLayout({ children }: { children: React.ReactNode }) {
-  return children;
+  return <I18nProvider initialLanguage="ka">{children}</I18nProvider>;
 }

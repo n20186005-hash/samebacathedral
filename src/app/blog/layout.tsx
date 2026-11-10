@@ -1,3 +1,4 @@
+import I18nProvider from '@/components/I18nProvider';
 import type { Metadata } from 'next';
 const title = 'სამების ტაძრის გზამკვლევი და ისტორიები';
 const description = 'სამების ტაძრის ისტორიისა და ვიზიტის გზამკვლევი: წყაროები და გადამოწმებული შესწორებები.';
@@ -7,4 +8,4 @@ export const metadata: Metadata = {
   openGraph: { title, description, url, locale: 'ka_GE', type: 'website', images: [] },
   twitter: { title, description, card: 'summary', images: [] },
 };
-export default function BlogLayout({ children }: { children: React.ReactNode }) { return children; }
+export default function BlogLayout({ children }: { children: React.ReactNode }) { return <I18nProvider initialLanguage="ka">{children}</I18nProvider>; }
